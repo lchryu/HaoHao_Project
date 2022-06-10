@@ -12,8 +12,6 @@
     /* position: fixed !important;
     width: 100%; */
 }
-
-
 .Title-text{
     justify-content: center;
 }
@@ -43,14 +41,14 @@
 /* CSS for button */
 .list{
     margin: 0px 70px;
-    padding: 0px 15px;
+    padding: 0px 100px;
 }
 .row{
-    padding: 56px 0px;
+    padding: 56px 0px 5px 0px;
 }
-/* .heading-styled{
-    position: absolute !important; 
-} */
+.heading-styled{
+    padding: 5px 0px; 
+}
 .btn-color{
     background-color: #EE8BAE;
     border-radius: 0.5rem;
@@ -63,6 +61,7 @@
     border-radius: 0.5rem;
     padding: 3px 5px;
 } 
+
 
 /* CSS for list-grid */
 
@@ -108,6 +107,35 @@
     border-radius: 1rem;
 }
 
+/* Phần số trang card */
+.number-page{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Phần slide video */
+.border-list-video{
+    height: 5px;
+    background-color: rgba(238, 139, 174);
+    margin: 20px 170px;   
+}
+.bd-slide img{
+    border-radius: 1rem;
+}
+.pad-sl{
+    padding-left: 35px;
+}
+.carousel-inner ul{
+    padding: 0px 130px;
+}
+.bg-button .ic{
+    background-color:#dd2566;
+    border-radius: 50px;
+}
+
+
+
+
 
 /* Phần ảnh của footer */
 .img-footer{
@@ -142,6 +170,7 @@
     background-color:#E7061F;
     color: white;
 }
+
 /* Phần footer */
 .footer{
     background-color: rgba(244, 244, 244);
