@@ -161,6 +161,7 @@
 
 .carousel-inner ul {
     padding: 0px 130px;
+    \Admin\login\Admin.html
 }
 
 .bg-button .ic {
@@ -170,6 +171,24 @@
 
 
 
+
+
+/* button admin */
+.btn-admin {
+    background-color: #EE8BAE;
+    border-radius: 10%;
+    border: solid #fff 2px
+}
+
+.btn-admin:hover {
+    background-color: #FF6666;
+    color: white;
+}
+
+.btn-admin:active {
+    background-color: #FF3366;
+    color: white;
+}
 
 
 /* Phần ảnh của footer */
