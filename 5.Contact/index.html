@@ -1,19 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Liên Hệ - Mì Hảo Hảo - Mì Hảo Hảo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css\bootstrap.css">
 </head>
-
 <body>
-    <div class="box">
-       <h1>Đây là mẫu chung</h1>
-    </div>
-    <script src="./assets/js/custom.js"></script>
-</body>
+  <div class="container">
+    <form >
+        <fieldset disabled>
+          <h1 style="color:red;text-align: center;">LIÊN HỆ VỚI ACECOOK VIỆT NAM</h1>
+          <h2 style = "text-align:center;font-size:22px">Acecook Việt Nam rất mong nhận được ý kiến đóng góp của khách hàng. Hãy điền thông tin liên hệ của bạn vào bảng dưới đây, Acecook Việt Nam Team sẽ liên hệ với bạn trong thời gian nhanh nhất</h2>
+          <div class="mb-3 ">
+            <div > <input type="text" class="form-control"  placeholder="Họ Tên *"></div>
+          </div>
+          <div class="mb-3" >
+            <li style = "list-style:none;display: flex">
+                <input type="email" style = "margin-right: 10px;" class="form-control"  placeholder="Email *">
+                <input type="text" class="form-control" placeholder="Số điện thoại">
+            </li>
+           
+            
+          </div>
+          <div class="mb-3">
+            
+            <select id="disabledSelect" class="form-select">
+              <option>Chọn Khu Vực *</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            
+            <select id="disabledSelect" class="form-select">
+              <option>Chọn Chủ Đề Để Liên Hệ *</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" style ="padding: 30px" placeholder="Nội Dung *">
+          </div>
+          <!-- <div class="col-span-2">
+            <p class="m-0 font-bold">Hình ảnh đính kèm (GIF, PNG, JPG, JPEG)</p>
+            <div class="fake-upload"><a class="fake-button">Choose File</a> <span class="file-name">No File Chosen</span><span class="wpcf7-form-control-wrap contact-hinh-anh"><input type="file" name="contact-hinh-anh" size="40" class="wpcf7-form-control wpcf7-file" accept=".gif,.png,.jpg,.jpeg" aria-invalid="false"></span></div>
+            <p class="text-red m-0">* là nội dung bắt buộc phải điền</p>
+          </div> -->
+          <div class = "mb-3">
+            <label for="disabledTextInput" class="form-label">Hình ảnh đính kèm (GIF, PNG, JPG, JPEG)</label>
+            <div style = "border: red;">
+                <button type="file" style="background-color: red;" class="btn btn-primary">Choose File</button>
+                <input type="text" class="form-control" placeholder="No File Chosen *">
+            </div>
+          </div>
+          <div style = "text-align: center;">
+            <button type="submit" style="background-color: red;" class="btn btn-primary">Gửi</button>
+          </div>
 
+        </fieldset>
+      </form>
+    </div>  
+</body>
 </html>
