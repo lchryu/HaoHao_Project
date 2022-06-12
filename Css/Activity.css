@@ -3,4 +3,265 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Nunito Sans, sans-serif;
+<<<<<<< HEAD
+=======
+}
+
+
+/* CSS for HaoHao-Title */
+.HaoHao-title {
+    background-color: #EE8BAE;
+    height: 65px;
+<<<<<<<< HEAD:Css/index.css
+    position: fixed !important;
+    z-index: 1;
+========
+    z-index: 1;
+    position: fixed !important;
+>>>>>>>> thanhthao:Css/Activity.css
+    width: 100%;
+}
+
+.Title-text {
+    justify-content: center;
+}
+
+.navbar-nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Nunito Sans, sans-serif;
+    margin: 0px 20px;
+    font-weight: 600;
+}
+
+.nav:hover {}
+
+.navbar-nav li a {
+    display: inline-block !important;
+}
+
+.navbar-nav li:hover a {
+    color: white;
+    background-color: #e96593;
+
+    display: inline-block;
+}
+
+/* đổi chiều cao thẻ li thành 1704 */
+.navbar-nav li a {
+    height: 100%;
+}
+
+.logo {
+    margin-left: 150px;
+}
+
+.icons ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+/* CSS for button */
+.list {
+    margin: 0px 70px;
+    padding: 0px 100px;
+}
+
+.row {
+    padding: 56px 0px 5px 0px;
+}
+
+.heading-styled {
+    padding: 5px 0px;
+}
+
+.btn-color {
+    background-color: #EE8BAE;
+    border-radius: 0.5rem;
+    padding: 0px 20px;
+    /* position: relative; */
+}
+
+.dropdown {
+    float: right;
+    border: 1px solid rgb(205, 51, 205);
+    border-radius: 0.5rem;
+    padding: 3px 5px;
+}
+
+
+/* CSS for list-grid */
+
+.card-title {
+    /* max-height: 50px; */
+    font-size: 17px;
+    line-height: 1.3;
+    font-weight: 600;
+    padding: 0px 30px;
+}
+
+.card-title a {
+    text-decoration: none;
+    color: #EF0016;
+}
+
+.btn-card {
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.btn-xem {
+    border: 3px solid #EF0016;
+    text-decoration: none;
+    color: #EF0016;
+    padding: 5px 15px;
+    border-radius: 0.5rem;
+}
+
+.btn-xem:hover {
+    background-color: red;
+    color: white;
+}
+
+.bg-card {
+    background-color: rgba(244, 244, 244);
+}
+
+.card-text {
+    font-size: 15px;
+    padding: 0px 30px;
+}
+
+.card-img-top {
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+    border-radius: 1rem;
+}
+
+/* Phần số trang card */
+.number-page {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 600px;
+}
+
+.number-page ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+
+/* Phần slide video */
+.border-list-video {
+    height: 5px;
+    background-color: rgba(238, 139, 174);
+    margin: 20px 170px;
+}
+
+.bd-slide img {
+    border-radius: 1rem;
+}
+
+.pad-sl {
+    padding-left: 35px;
+}
+
+.carousel-inner ul {
+    padding: 0px 130px;
+    \Admin\login\Admin.html
+}
+
+.bg-button .ic {
+    background-color: #dd2566;
+    border-radius: 50px;
+}
+
+
+
+
+
+/* button admin */
+.btn-admin {
+    background-color: #EE8BAE;
+    border-radius: 10%;
+    border: solid #fff 2px
+}
+
+.btn-admin:hover {
+    background-color: #FF6666;
+    color: white;
+}
+
+.btn-admin:active {
+    background-color: #FF3366;
+    color: white;
+}
+
+
+/* Phần ảnh của footer */
+.img-footer {
+    background-image: url(https://www.mihaohao.vn/wp-content/uploads/2021/04/recruit.png);
+    background-size: cover;
+    padding: 60px 0px 60px 0px;
+    background-position: center center;
+}
+
+.content-footer {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.text-img h3 {
+    color: #E7061F;
+    font-weight: 550;
+    font-family: Nunito Sans, sans-serif;
+    line-height: 1.5em;
+    font-size: 4vw;
+    text-transform: uppercase;
+}
+
+.btn-img button {
+    color: #E7061F;
+    border: 4px solid #E7061F;
+    background-color: #FFFFFF00;
+    border-radius: 50px;
+    font-weight: 700;
+    padding: 15px 30px;
+    line-height: 1;
+}
+
+.btn-img button:hover {
+    background-color: #E7061F;
+    color: white;
+}
+
+/* Phần footer */
+.footer {
+    background-color: rgba(244, 244, 244);
+    height: 65px;
+    display: flex;
+}
+
+.footer-link ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.footer-link ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #444;
+    margin-left: 20px;
+    font-weight: 600;
+    font-family: Nunito Sans, sans-serif;
+    font-size: 16px;
+>>>>>>> thanhthao
 }
