@@ -118,10 +118,36 @@
 .number-page ul li a{
     text-decoration: none;
     margin-right: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.page1 a{
+    background-color: rgba(238, 139, 174);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50px;
 }
 
-
 /* Phần slide video */
+.video iframe{
+    border-radius: 1rem;
+    height: 300px;
+    width: 100%;
+    border: 1px solid rgba(238, 139, 174);
+    border-width: 4px;
+    padding: 5px 8px;
+}
+.info-video h3{
+    font-size: 20px;
+    color: rgba(239, 0, 22);
+    line-height: 1.4;
+    font-weight: 700;
+}
+.content-text{
+    line-height: 1.5;
+    font-size: 18px;
+    color: rgba(108, 108, 108)
+}
 .border-list-video{
     height: 5px;
     background-color: rgba(238, 139, 174);
