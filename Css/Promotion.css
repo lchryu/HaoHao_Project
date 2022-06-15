@@ -3,8 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Nunito Sans, sans-serif;
-<<<<<<< HEAD
-=======
 }
 
 
@@ -13,14 +11,8 @@
     background-color: #EE8BAE;
     height: 65px;
     width: 100%;
-<<<<<<<< HEAD:Css/index.css
     position: fixed !important;
     z-index: 1;
-========
-    z-index: 1;
-    position: fixed !important;
->>>>>>>> thanhthao:Css/Activity.css
-    width: 100%;
 }
 
 .Title-text {
@@ -176,7 +168,6 @@
 
 .carousel-inner ul {
     padding: 0px 130px;
-    \Admin\login\Admin.html
 }
 
 .bg-button .ic {
@@ -264,5 +255,4 @@
     font-weight: 600;
     font-family: Nunito Sans, sans-serif;
     font-size: 16px;
->>>>>>> thanhthao
 }
