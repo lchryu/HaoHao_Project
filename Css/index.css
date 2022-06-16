@@ -142,14 +142,7 @@
 .number-page {
     margin-top: 30px;
     margin-bottom: 30px;
-    padding-left: 600px;
 }
-
-.number-page ul li a {
-    text-decoration: none;
-    margin-right: 20px;
-}
-
 
 /* Phần slide video */
 .border-list-video {
@@ -168,6 +161,7 @@
 
 .carousel-inner ul {
     padding: 0px 130px;
+    \Admin\login\Admin.html
 }
 
 .bg-button .ic {
