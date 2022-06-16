@@ -1,4 +1,0 @@
-// function dangNhap(){
-//     alert('login');
-// }
-
