@@ -1,6 +1,128 @@
-* {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: Nunito Sans, sans-serif;
+}
+
+/* CSS for HaoHao-Title */
+.HaoHao-title{
+    background-color: #EE8BAE;
+    height: 65px;
+    z-index: 1;
+    position: fixed !important;
+    width: 100%;
+}
+.Title-text{
+    justify-content: center;
+}
+.navbar-nav a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Nunito Sans, sans-serif;
+    margin: 0px 20px;
+    font-weight: 600;
+}
+.nav:hover{
+    color: white;
+    background-color: #e96593;
+    padding: 5px;
+}
+.logo{
+    margin-left: 150px;
+}
+.icons ul li{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+/* PHẦN NỘI DUNG */
+.container{
+    max-width: 1140px !important;
+    /* margin-top: 72px; */
+    padding-top: 150px;
+}
+.Music-content{
+    padding: 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid-content{
+    grid-template-columns: repeat(11, minmax(0, 1fr));
+    display: grid;
+    gap: 40px;
+}
+.col-span-7{
+    grid-column: span 7 / span 7;
+}
+.col-span-4{
+    grid-column: span 4 / span 4;
+}
+
+.post-header h1{
+    font-size: 32px;
+    color: rgba(239, 0, 22);
+    font-weight: 700;
+    line-height: 1.4;
+}
+.interactive{
+    margin: 20px 0px;
+    font-size: 15px;
+}
+.split{
+    margin: 0px 15px; 
+}
+.ma-5{
+    margin: 0px 5px;
+}
+.post-content p{
+    text-align: justify;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+/* Phần thẻ CARD */
+.card-title{
+    /* max-height: 50px; */
+    font-size: 17px;
+    line-height: 1.3;
+    font-weight: 600;
+    padding: 0px 30px;
+}
+.card-title a{
+    text-decoration: none;
+    color: #EF0016;
+}
+.btn-card{
+    padding-top: 10px;
+    padding-left: 30px;
+}
+.btn-xem{
+    border: 3px solid #EF0016;
+    text-decoration: none;
+    color: #EF0016;
+    padding: 5px 15px;
+    border-radius: 0.5rem;
+}
+.btn-xem:hover{
+    background-color: red;
+    color: white;
+}
+.bg-card{
+    background-color: rgba(244, 244, 244);
+}
+.card-text{
+    font-size: 15px;
+    padding: 0px 30px;
+}
+.card-img-top{
+    transform: scale(1);
+    transition: all 0.5s;
+}
+.card-img-top:hover{
+    transform: scale(1.1);
+    border-radius: 1rem;
 }
