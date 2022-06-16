@@ -10,13 +10,8 @@
 .HaoHao-title {
     background-color: #EE8BAE;
     height: 65px;
-<<<<<<<< HEAD:Css/index.css
     position: fixed !important;
     z-index: 1;
-========
-    z-index: 1;
-    position: fixed !important;
->>>>>>>> thanhthao:Css/Activity.css
     width: 100%;
 }
 
@@ -150,7 +145,7 @@
     padding-left: 600px;
 }
 
-.number-page ul li a{
+.number-page ul li a {
     text-decoration: none;
     margin-right: 20px;
 }
@@ -173,7 +168,6 @@
 
 .carousel-inner ul {
     padding: 0px 130px;
-    \Admin\login\Admin.html
 }
 
 .bg-button .ic {
