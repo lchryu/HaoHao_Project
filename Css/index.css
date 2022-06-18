@@ -97,8 +97,17 @@ button.btn.btn-primary {
     font-weight: 750;
 }
 
+button.btn.btn-primary a {
+    text-decoration: none;
+    color: red;
+}
+
 button.btn.btn-primary:hover {
     background-color: #ff0000;
+    color: #fff;
+}
+ 
+button.btn.btn-primary:hover a{
     color: #fff;
 }
 
@@ -128,4 +137,3 @@ img.card-img-top.w-100.d-block {
     padding: 0px 24px;
     font-weight: 600;
 }
-
