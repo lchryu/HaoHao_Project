@@ -1,0 +1,90 @@
+.row {
+    display: block;
+    border: 1px solid black;
+    padding: 1rem;
+    width: 20rem;
+    margin: 2rem auto;
+    background-color: rgb(234, 224, 234);
+}
+
+.col {
+    margin: 1rem 0;
+}
+
+button {
+    border-radius: 0.2rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1.5px solid black;
+    margin: 0 auto;
+}
+
+input {
+    width: 14rem;
+}
+
+h4 {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(239, 235, 243);
+}
+
+div.col a {
+    text-decoration: none;
+    margin: 5rem;
+}
+
+#logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    text-decoration: none;
+    color: black;
+}
+
+span {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.snow {
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    top: 0;
+    height: 100%;
+    background-image: url(../img/tuyet1.png);
+    animation: snow 11s linear infinite;
+}
+
+.snow1 {
+    background-image: url(../img/tuyet2.png);
+    animation: snow 8s linear infinite;
+}
+
+.snow2 {
+    animation: snow 6s linear infinite;
+}
+
+.snow4 {
+    animation: snow 12s linear infinite;
+}
+
+.snow3 {
+    background-image: url(../img/tuyet3.png);
+    animation: snow 12s linear infinite;
+}
+
+@keyframes snow {
+    0% {
+        transform: translate3d(0, -100%, 0)
+    }
+
+    100% {
+        transform: translate3d(5%, 100%, 0)
+    }
+}

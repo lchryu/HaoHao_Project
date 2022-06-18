@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ quản trị</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/Css/Admin.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 side-bar">
+                <div class="menu">
+                    <div id="logo"><a href="../index.html">MIHAOHAO</a></div>
+                    <div class="account">
+                        <img src="./assets/img/AvataChungHoi.jpg" alt="ảnh đại diện" id="avatar">
+                        <span class="name">Chung Hội</span>
+                    </div>
+
+                    <ul class="tab">
+                        <li><button class="tablinks" data-electronic="sales"><i class="fa-solid fa-chart-line"></i>
+                                Thống kê</button></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><button class="tablinks active" data-electronic="fruid"><i class="fa-solid fa-carrot"></i>
+                                Sản phẩm</button></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><button class="tablinks" data-electronic="order"><i class="fa-solid fa-box"></i> Chi
+                                nhánh</button></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><button class="tablinks" data-electronic="customer"><i class="fa-solid fa-person"></i> Khách
+                                hàng</button></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li><button class="tablinks" data-electronic="accounts"><i class="fa-solid fa-circle-user"></i>
+                                Tài khoản</button></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li><button class="tablinks" data-electronic="Posts"><i class="fa-solid fa-circle-user"></i>
+                                Bài đăng</button></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- side-bar-content -->
+            <div class="col-9 side-bar-content">
+                <!-- dropdown menu góc trên cùng bên phải -->
+                <div class="div1">
+                    <h4>Trang quản trị website Mihaohao.vn</h4>
+                    <div class="dropdown">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="name">Chung Hội</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" target="_blank" href="./Profile.html">Thông tin cá nhân</a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" target="_blank" href="./ChangePassword.html">
+                                    Đổi mật khẩu
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" target="_blank" href="./Login.html">
+                                    Đăng xuất
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Nội dung Thống kê -->
+                <div id="sales" class="tabcontent">
+                    <div class="div2">
+                        <h5>Thống kê doanh số</h5>
+                    </div>
+                    <div id="chart1" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                <!-- Kết thúc thống kê -->
+
+
+                <div id="fruid" class="tabcontent active">
+                    <div class="div2">
+                        <h5>Danh sách sản phẩm</h5>
+                    </div>
+                    <div class="add-fruid">
+                        <div class="list-fruid">
+                            <label>Mã sản phẩm:</label>
+                            <input type="text" name="" id="id">
+                        </div>
+                        <div class="list-fruid">
+                            <label>Tên sản phẩm:</label>
+                            <input type="text" name="" id="name">
+                        </div>
+                        <div class="list-fruid">
+                            <label>Ảnh sản phẩm:</label>
+                            <input type="file" name="" id="images" accept="image/*">
+                        </div>
+                        <div class="list-fruid">
+                            <label>Số lượng:</label>
+                            <input type="text" name="" id="numbers">
+                        </div>
+                        <div class="list-fruid">
+                            <label>Giá sản phẩm:</label>
+                            <input type="text" name="" id="price">
+                        </div>
+                        <div class="">
+                            <button onclick="add()" class="btn-add">Thêm sản phẩm</button>
+                        </div>
+                    </div>
+                    <div>
+                        <table class="table" id="render">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Mã sản phẩm</th>
+                                    <th scope="col">Tên sản phẩm</th>
+                                    <th scope="col">Ảnh sản phẩm</th>
+                                    <th scope="col">Số lượng</th>
+                                    <th scope="col">Giá sản phẩm</th>
+                                    <th scope="col">Sửa/Xóa</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div id="order" class="tabcontent">
+                    <div class="div2">
+                        <h5>Danh sách chi nhánh</h5>
+                    </div>
+                    <div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Mã chi nhánh</th>
+                                    <th scope="col">Tên chi nhánh</th>
+                                    <th scope="col">Địa chỉ</th>
+                                    <th scope="col">Doanh thu(2021)</th>
+                                    <th scope="col">Lợi nhuận</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="col">CN01</th>
+                                    <th scope="col">The Bread Box</th>
+                                    <th scope="col">TP.HCM</th>
+                                    <th scope="col">3.000.000.000</th>
+                                    <th scope="col">2.550.400.000</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">CN01</th>
+                                    <th scope="col">HAO HAO ACK</th>
+                                    <th scope="col">Hà Nội</th>
+                                    <th scope="col">3.000.000.000</th>
+                                    <th scope="col">1.954.000.000</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div id="customer" class="tabcontent">
+                    <div class="div2">
+                        <h5>Danh sách khách hàng</h5>
+                    </div>
+                    <div>
+                        <table class="table" id="renderCustomer">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Mã khách hàng</th>
+                                    <th scope="col">Tên khách hàng</th>
+                                    <th scope="col">Số điện thoại</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Khu vực</th>
+                                    <th scope="col">Chủ đề liên hệ</th>
+                                    <th scope="col">Nội dung</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="col">KH01</th>
+                                    <th scope="col">Lương Chung Hội</th>
+                                    <th scope="col">0978259158</th>
+                                    <th scope="col">lch.ryu@gmail.com</th>
+                                    <th scope="col">Hưng Yên</th>
+                                    <th scope="col">Hợp tác</th>
+                                    <th scope="col">Mong muốn hợp tác</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">KH02</th>
+                                    <th scope="col">Trần Thanh Thảo</th>
+                                    <th scope="col">0123456789</th>
+                                    <th scope="col">thanhthaop@gmail.com</th>
+                                    <th scope="col">Hà Nội</th>
+                                    <th scope="col">Hợp tác</th>
+                                    <th scope="col">Mong muốn hợp tác</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">KH03</th>
+                                    <th scope="col">Bùi Văn Phú</th>
+                                    <th scope="col">03213874278</th>
+                                    <th scope="col">vanphu@gmail.com</th>
+                                    <th scope="col">Bắc Ninh</th>
+                                    <th scope="col">Đóng góp</th>
+                                    <th scope="col">Cải thiện cscv</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="accounts" class="tabcontent">
+                    <div class="div2">
+                        <h5>Danh sách tài khoản</h5>
+                    </div>
+                    <div class="add-account">
+                        <div class="list-account">
+                            <label>Số thứ tự:</label>
+                            <input type="number" name="" id="indexAccount">
+                        </div>
+                        <div class="list-account">
+                            <label>Tên tài khoản:</label>
+                            <input type="text" name="" id="idAccount">
+                        </div>
+                        <div class="list-account">
+                            <label>Họ tên:</label>
+                            <input type="text" name="" id="nameAccount">
+                        </div>
+                        <div class="list-account">
+                            <label>Số điện thoại/email:</label>
+                            <input type="text" name="" id="numbersAccount">
+                        </div>
+                        <div class="list-account">
+                            <label>Mật khẩu:</label>
+                            <input type="text" name="" id="passwordAccount">
+                        </div>
+                        <div class="">
+                            <button onclick="addAccount()" class="btn-add">Thêm tài khoản</button>
+                        </div>
+                    </div>
+                    <div>
+                        <table class="table" id="renderAccount">
+                            <thead>
+                                <tr>
+                                    <th scope="col">STT</th>
+                                    <th scope="col">Họ tên</th>
+                                    <th scope="col">Tên tài khoản</th>
+                                    <th scope="col">Mật khẩu</th>
+                                    <th scope="col">Số điện thoại/email</th>
+                                    <th scope="col">Sửa/Xóa</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Quản lý bài đăng -->
+                <div id="Posts" class="tabcontent Posts">
+                    <div class="div2">
+                        <h5>Quản lý bài đăng</h5>
+                    </div>
+                    <div class="add-fruid">
+                        <div class="list-fruid">
+                            <label>Mã bài đăng</label>
+                            <input type="number" name="" id="idPost" placeholder="id là duy nhất">
+                        </div>
+                        <div class="list-fruid">
+                            <label>Tiêu đề</label>
+                            <input type="text" name="" id="headerPost" placeholder="Nhập tiêu đề bài viết">
+                        </div>
+                        <div class="list-fruid">
+                            <label>Nội dung</label>
+                            <input type="text" name="" id="contentPost" placeholder="Nhập nội dung bài viết">
+                        </div>
+                        <div class="list-fruid">
+                            <label>Ảnh đính kèm</label>
+                            <input type="file" name="" id="imagesPost" accept="image/*">
+                        </div>
+                        <div class="list-fruid">
+                            <label>Mô tả</label>
+                            <input type="text" name="" id="descPost" placeholder="Mục đích bài viết">
+                        </div>
+                        <!-- <div class="list-fruid">
+                            <label>Giá sản phẩm:</label>
+                            <input type="text" name="" id="price">
+                        </div> -->
+                        <div class="">
+                            <button onclick="addPost()" class="btn-add">Đăng bài</button>
+                        </div>
+                    </div>
+                    <div>
+                        <table class="table" id="renderPost">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Tiêu đề</th>
+                                    <th scope="col">Nội dung</th>
+                                    <th scope="col">Ảnh đính kèm</th>
+                                    <th scope="col">Mô tả</th>
+                                    <th scope="col">Sửa/Xóa</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <!-- Kết thúc quản lý bài đăng -->
+            </div>
+            <!-- kết thúc side-bar-content -->
+        </div>
+    </div>
+    <script src="./assets/Js/Admin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

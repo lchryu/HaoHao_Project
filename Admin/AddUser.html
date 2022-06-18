@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/AddUser.css">
+</head>
+
+<body>
+    <div class="Heading">
+        <h1>User</h1>
+    </div>
+
+    <div class="container">
+        <div class="text-box text-box1">
+            <label for="">ID</label>
+            <input type="text" id="id">
+        </div>
+
+        <div class="text-box text-box2">
+            <label for="">Name</label>
+            <input type="text" id="name">
+        </div>
+
+        <div class="text-box text-box3">
+            <label for="">Age</label>
+            <input type="text" id="age">
+        </div>
+
+        <div class="Button-submit">
+            <button type="submit" onclick="add()">Submit</button>
+        </div>
+    </div>
+
+    <div class="label">
+        <label for="">
+            <h2>User List</h2>
+        </label>
+    </div>
+
+    <div class="container-table">
+        <table class="table table-bordered table-sm" id='render'>
+            <thead>
+                <tr d-flex>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+
+    <script src="./assets/AddUser.js">
+
+    </script>
+</body>
+
+</html>
