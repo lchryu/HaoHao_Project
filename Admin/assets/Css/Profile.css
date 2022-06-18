@@ -1,0 +1,22 @@
+#admin{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 5rem;
+}
+.row{
+    width: 30rem;
+}
+div.sex > input{
+    width: 2rem;
+}
+label{
+    width: 8rem;
+    font-weight: bold;
+}
+#btnSave{
+    background-color:rgb(118, 99, 136); 
+    display:flex;
+    justify-content: center;
+    width:3rem;
+}
