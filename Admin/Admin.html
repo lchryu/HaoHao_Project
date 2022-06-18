@@ -52,12 +52,19 @@
 
                         <li><button class="tablinks" data-electronic="accounts"><i class="fa-solid fa-circle-user"></i>
                                 Tài khoản</button></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li><button class="tablinks" data-electronic="Posts"><i class="fa-solid fa-circle-user"></i>
+                                Bài đăng</button></li>
                     </ul>
                 </div>
             </div>
 
             <!-- side-bar-content -->
             <div class="col-9 side-bar-content">
+                <!-- dropdown menu góc trên cùng bên phải -->
                 <div class="div1">
                     <h4>Trang quản trị website Mihaohao.vn</h4>
                     <div class="dropdown">
@@ -66,15 +73,24 @@
                             <span class="name">Chung Hội</span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li><a class="dropdown-item" target="_blank" href="./Profile.html">Thông tin cá nhân</a>
+                            <li>
+                                <a class="dropdown-item" target="_blank" href="./Profile.html">Thông tin cá nhân</a>
                             </li>
-                            <li><a class="dropdown-item" target="_blank" href="./ChangePassword.html">Đổi mật
-                                    khẩu</a></li>
-                            <li><a class="dropdown-item" target="_blank" href="./Login.html">Đăng
-                                    xuất</a></li>
+
+                            <li>
+                                <a class="dropdown-item" target="_blank" href="./ChangePassword.html">
+                                    Đổi mật khẩu
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" target="_blank" href="./Login.html">
+                                    Đăng xuất
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
+
                 <!-- Nội dung Thống kê -->
                 <div id="sales" class="tabcontent">
                     <div class="div2">
@@ -83,7 +99,6 @@
                     <div id="chart1" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
                 </div>
                 <!-- Kết thúc thống kê -->
-
 
 
                 <div id="fruid" class="tabcontent active">
@@ -259,6 +274,57 @@
                         </table>
                     </div>
                 </div>
+
+                <!-- Quản lý bài đăng -->
+                <div id="Posts" class="tabcontent Posts">
+                    <div class="div2">
+                        <h5>Quản lý bài đăng</h5>
+                    </div>
+                    <div class="add-fruid">
+                        <div class="list-fruid">
+                            <label>Mã bài đăng</label>
+                            <input type="number" name="" id="idPost" placeholder="id là duy nhất">
+                        </div>
+                        <div class="list-fruid">
+                            <label>Tiêu đề</label>
+                            <input type="text" name="" id="headerPost" placeholder="Nhập tiêu đề bài viết">
+                        </div>
+                        <div class="list-fruid">
+                            <label>Nội dung</label>
+                            <input type="text" name="" id="contentPost" placeholder="Nhập nội dung bài viết">
+                        </div>
+                        <div class="list-fruid">
+                            <label>Ảnh đính kèm</label>
+                            <input type="file" name="" id="imagesPost" accept="image/*">
+                        </div>
+                        <div class="list-fruid">
+                            <label>Mô tả</label>
+                            <input type="text" name="" id="descPost" placeholder="Mục đích bài viết">
+                        </div>
+                        <!-- <div class="list-fruid">
+                            <label>Giá sản phẩm:</label>
+                            <input type="text" name="" id="price">
+                        </div> -->
+                        <div class="">
+                            <button onclick="addPost()" class="btn-add">Đăng bài</button>
+                        </div>
+                    </div>
+                    <div>
+                        <table class="table" id="renderPost">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Tiêu đề</th>
+                                    <th scope="col">Nội dung</th>
+                                    <th scope="col">Ảnh đính kèm</th>
+                                    <th scope="col">Mô tả</th>
+                                    <th scope="col">Sửa/Xóa</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <!-- Kết thúc quản lý bài đăng -->
             </div>
             <!-- kết thúc side-bar-content -->
         </div>

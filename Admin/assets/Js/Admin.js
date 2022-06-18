@@ -21,16 +21,16 @@ function openTabs(el) {
 //  tab danh sách sản phẩm
 var data = []
 function add() {
-	var itemId = document.getElementById('id').value
-	var itemName = document.getElementById('name').value
-	var itemImg = document.getElementById('images').value
-	var itemNumbers = document.getElementById('numbers').value
+	var itemHeaderPost = document.getElementById('id').value
+	var itemNamePost = document.getElementById('name').value
+	var itemImgPost = document.getElementById('images').value
+	var itemDescPost = document.getElementById('numbers').value
 	var itemPrice = document.getElementById('price').value
 	var item = {
-		Id: itemId,
-		Name: itemName,
-		Images: itemImg,
-		Numbers: itemNumbers,
+		Id: itemHeaderPost,
+		Name: itemNamePost,
+		Images: itemImgPost,
+		Numbers: itemDescPost,
 		Price: itemPrice
 	}
 	let index = data.findIndex((c) => c.Id == item.Id)
@@ -69,10 +69,10 @@ function render() {
 	document.getElementById('render').innerHTML = table
 }
 function clear() {
-	var itemId = document.getElementById('id').value = ""
-	var itemName = document.getElementById('name').value = ""
-	var itemImg = document.getElementById('images').value = ""
-	var itemNumbers = document.getElementById('numbers').value = ""
+	var itemHeaderPost = document.getElementById('id').value = ""
+	var itemNamePost = document.getElementById('name').value = ""
+	var itemImgPost = document.getElementById('images').value = ""
+	var itemDescPost = document.getElementById('numbers').value = ""
 	var itemPrice = document.getElementById('price').value = ""
 }
 function deleteItem(x) {
@@ -206,6 +206,87 @@ function editAccount(x) {
 			document.getElementById('numbersAccount').value = accounts[i].Numbers
 			document.getElementById('passwordAccount').value = accounts[i].Password
 			document.getElementById('indexAccount').value = accounts[i].Index
+		}
+	}
+}
+
+
+
+//  tab ds các bài đăng
+var Posts = []
+function addPost() {
+	var itemIdPost = document.getElementById('idPost').value;
+	var itemHeaderPost = document.getElementById('headerPost').value;
+	var itemContentPost = document.getElementById('contentPost').value;
+	var itemImgPost = document.getElementById('imagesPost').value;
+	var itemDescPost = document.getElementById('descPost').value;
+	// var itemPrice = document.getElementById('price').value
+	var item = {
+		IdPost: itemIdPost,
+		HeadPost: itemHeaderPost,
+		ContentPost: itemContentPost,
+		ImagesPost: itemImgPost,
+		DescPost: itemDescPost,
+	}
+	let index = Posts.findIndex((c) => c.IdPost == item.IdPost)
+	console.log(index);
+	if (index >= 0) {
+		Posts.splice(index, 1, item);
+	}
+	else {
+		Posts.push(item);
+	}
+	renderPost();
+	clearPost();
+}
+//In thông tin sản phẩm
+function renderPost() {
+	table = `<tr>
+	<th scope="col">ID</th>
+	<th scope="col">Tiêu đề</th>
+	<th scope="col">Nội dung</th>
+	<th scope="col">Ảnh đính kèm</th>
+	<th scope="col">Mô tả</th>
+	<th scope="col">Sửa/Xóa</th>
+</tr>`
+	for (let i = 0; i < Posts.length; i++) {
+		table += `<tr>
+   <th scope="col">${Posts[i].IdPost}</th>
+   <th scope="col">${Posts[i].HeadPost}</th>
+   <th scope="col">${Posts[i].ContentPost}</th>
+   <th scope="col"><img src=${Posts[i].ImagesPost}></th>
+   <th scope="col">${Posts[i].DescPost}</th>
+   <th scope="col">
+      <button class="btn btn-warning" onclick="editItemPost(${Posts[i].IdPost})">Sửa</button>
+      <button class="btn btn-danger" onclick="deleteItemPost(${Posts[i].IdPost})">Xóa</button>
+   </th>
+   </tr>`
+	}
+	document.getElementById('renderPost').innerHTML = table;
+}
+function clearPost() {
+	var itemId = document.getElementById('idPost').value = "";
+	var itemHead = document.getElementById('headerPost').value = "";
+	var itemName = document.getElementById('contentPost').value = "";
+	var itemImages = document.getElementById('imagesPost').value = "";
+	var itemDesc = document.getElementById('descPost').value = "";
+}
+function deleteItemPost(x) {
+	for (let i = 0; i < Posts.length; i++) {
+		if (Posts[i].IdPost == x) {
+			Posts.splice(i, 1);
+			renderPost();
+		}
+	}
+}
+function editItemPost(x) {
+	for (let i = 0; i < Posts.length; i++) {
+		if (Posts[i].IdPost == x) {
+			document.getElementById('idPost').value = Posts[i].IdPost;
+			document.getElementById('headerPost').value = Posts[i].HeadPost;
+			document.getElementById('contentPost').value = Posts[i].ContentPost;
+			document.getElementById('imagesPost').value = Posts[i].ImagesPost;
+			document.getElementById('descPost').value = Posts[i].DescPost;
 		}
 	}
 }
