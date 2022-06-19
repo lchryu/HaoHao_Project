@@ -128,7 +128,7 @@ Highcharts.chart('chart1', {
 	},
 	{
 		name: 'Doanh thu 2022',
-		data: [110, 89, 91,]
+		data: [110, 89, 91, 60, 70, 120, 85]
 	}]
 });
 //tab tài khoản

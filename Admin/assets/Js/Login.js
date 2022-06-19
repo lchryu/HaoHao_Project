@@ -1,15 +1,15 @@
 var users = [
     {
-        username: "khang",
-        password: "1234567",
+        username: "LuongChungHoi",
+        password: "LuongChungHoi",
     },
     {
-        username: "nhung",
-        password: "abcdegf",
+        username: "ThanhThao2k2",
+        password: "ThanhThao2k2",
     },
     {
-        username: "phunguyen",
-        password: "123456789",
+        username: "VanPhu2k2",
+        password: "VanPhu2k2",
     },
 ]
 
