@@ -54,17 +54,18 @@ function render() {
    <th scope="col">Sửa/Xóa</th>
    </tr>`
 	for (let i = 0; i < data.length; i++) {
-		table += `<tr>
-   <th scope="col">${data[i].Id}</th>
-   <th scope="col">${data[i].Name}</th>
-   <th scope="col"><img src=${data[i].Images}></th>
-   <th scope="col">${data[i].Numbers}</th>
-   <th scope="col">${data[i].Price}</th>
-   <th scope="col">
-      <button class="btn btn-warning" onclick="editItem(${data[i].Id})">Sửa</button>
-      <button class="btn btn-danger" onclick="deleteItem(${data[i].Id})">Xóa</button>
-   </th>
-   </tr>`
+		table +=
+			`<tr>
+			<th scope="col">${data[i].Id}</th>
+			<th scope="col">${data[i].Name}</th>
+			<th scope="col"><img src=${data[i].Images}></th>
+			<th scope="col">${data[i].Numbers}</th>
+			<th scope="col">${data[i].Price}</th>
+			<th scope="col">
+				<button class="btn btn-warning" onclick="editItem(${data[i].Id})">Sửa</button>
+				<button class="btn btn-danger" onclick="deleteItem(${data[i].Id})">Xóa</button>
+			</th>
+		</tr>`
 	}
 	document.getElementById('render').innerHTML = table
 }

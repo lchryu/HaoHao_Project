@@ -2,6 +2,7 @@
     --text-color: rgb(40, 39, 41);
     --body-color: rgb(239, 235, 243);
     --btn-color: rgb(198, 184, 212);
+    --title-color: #EE8BAE;
     --text-color-active: rgb(255, 255, 255);
 }
 
@@ -56,7 +57,7 @@ h4 {
 }
 
 .div2 {
-    background-color: var(--btn-color);
+    background-color: var(--title-color);
     height: 1.8rem;
 }
 
@@ -136,7 +137,7 @@ label {
 }
 
 
-.btn-add:active{
+.btn-add:active {
     background-color: var(--btn-color);
     color: var(--text-color-active);
     box-shadow: 0 0 0.5rem 0.5rem var(--text-color-active);
