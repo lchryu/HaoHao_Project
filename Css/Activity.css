@@ -1,43 +1,16 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: Nunito Sans, sans-serif;
 }
 
-/* CSS for HaoHao-Title */
-/* .HaoHao-title{
-    background-color: #EE8BAE;
-    height: 65px;
-    z-index: 1;
-    position: fixed !important;
-    width: 100%;
-}
-.Title-text{
-    justify-content: center;
-}
-.navbar-nav a{
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: Nunito Sans, sans-serif;
-    margin: 0px 20px;
-    font-weight: 600;
-}
-.nav:hover{
-    color: white;
-    background-color: #e96593;
-}
-.logo{
-    margin-left: 150px;
-}
-.icons ul li{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-} */
+/* NAVBAR */
 .icon {
     margin: 8px;
+}
+.test {
+    height: 1000px;
 }
 nav{
     z-index: 1;
@@ -48,11 +21,9 @@ nav{
     background-color: #e96593;
     padding: 100px 0px;
 }
+
+
 /* CSS for button */
-.list{
-    margin: 0px 70px;
-    padding: 0px 100px;
-}
 .row{
     padding: 56px 0px 5px 0px;
 }
@@ -70,12 +41,10 @@ nav{
     border: 1px solid rgb(205, 51, 205);
     border-radius: 0.5rem;
     padding: 3px 5px;
-} 
+}
 
-
-/* CSS for list-grid */
+/* CSS for CARD */
 .card-title{
-    /* max-height: 50px; */
     font-size: 17px;
     line-height: 1.3;
     font-weight: 600;
@@ -116,8 +85,11 @@ nav{
     border-radius: 1rem;
 }
 .img-sukien img{
-    height: 200px;
+    height: 250px;
     width: 100%;
+}
+.list-grid{
+    margin: 0px 70px;
 }
 
 /* Phần số trang card */
@@ -165,6 +137,7 @@ nav{
     color: white;
 }
 
+
 /* Phần slide video */
 .video iframe{
     border-radius: 1rem;
@@ -208,8 +181,6 @@ nav{
 
 
 
-
-
 /* Phần ảnh của footer */
 .img-footer{
     background-image: url(https://www.mihaohao.vn/wp-content/uploads/2021/04/recruit.png);
@@ -244,12 +215,13 @@ nav{
     color: white;
 }
 
+
+
 /* Phần footer */
-.footer{
+footer{
     background-color: rgba(244, 244, 244);
-    height: 65px;
-    display: flex;
 }
+
 .footer-link ul{
     display: flex;
     list-style-type: none;
@@ -263,4 +235,3 @@ nav{
     font-family: Nunito Sans, sans-serif;
     font-size: 16px;
 }
-

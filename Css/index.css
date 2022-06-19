@@ -6,71 +6,6 @@
 }
 
 
-
-/*Footer-Basic.css (tên file cũ trong bootstrap studio)*/
-/* .footer-basic {
-    padding: 40px 0;
-    background-color: #ffffff;
-    color: #4b4c4d;
-}
-
-.footer-basic ul {
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-}
-
-.footer-basic li {
-    padding: 0 10px;
-}
-
-.footer-basic ul a {
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.8;
-}
-
-.footer-basic ul a:hover {
-    opacity: 1;
-}
-
-.footer-basic .social {
-    text-align: center;
-    padding-bottom: 25px;
-}
-
-.footer-basic .social>a {
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    border: 1px solid #ccc;
-    margin: 0 8px;
-    color: inherit;
-    opacity: 0.75;
-}
-
-.footer-basic .social>a:hover {
-    opacity: 0.9;
-}
-
-.footer-basic .copyright {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: #aaa;
-    margin-bottom: 0;
-} */
-
-
-
-
 /* style.css (tên file cũ trong bootstrap studio) */
 .icon {
     margin: 8px;
@@ -85,40 +20,6 @@
     padding: 100px 0px;
 }
 
-/* .card-title {
-    font-size: 16px;
-}
-
-button.btn.btn-primary {
-    background-color: transparent;
-    color: red;
-    border: 2px solid #FF0000;
-    border-radius: 10px;
-    font-weight: 750;
-}
-
-button.btn.btn-primary a {
-    text-decoration: none;
-    color: red;
-}
-
-button.btn.btn-primary:hover {
-    background-color: #ff0000;
-    color: #fff;
-}
- 
-button.btn.btn-primary:hover a{
-    color: #fff;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%) !important;
-    border-radius: 10px !important;
-}
-
-img.card-img-top.w-100.d-block {
-    border-radius: 10px 10px 0 0 !important;
-} */
 
 .card-header-title {
     display: flex;
@@ -181,12 +82,11 @@ img.card-img-top.w-100.d-block {
     border-radius: 1rem;
 }
 .img-sukien img{
-    height: 200px;
+    height: 250px;
     width: 100%;
 }
 .list-grid{
     margin: 0px 70px;
-    /* padding: 0px 100px; */
 }
 
 
