@@ -9,14 +9,17 @@
 .icon {
     margin: 8px;
 }
+
 .test {
     height: 1000px;
 }
-nav{
+
+nav {
     z-index: 1;
     position: fixed !important;
     width: 100%;
 }
+
 .navbar li:hover a {
     background-color: #e96593;
     padding: 100px 0px;
@@ -24,19 +27,22 @@ nav{
 
 
 /* CSS for button */
-.row{
+.row {
     padding: 56px 0px 5px 0px;
 }
-.heading-styled{
-    padding: 5px 0px; 
+
+.heading-styled {
+    padding: 5px 0px;
 }
-.btn-color{
+
+.btn-color {
     background-color: #EE8BAE;
     border-radius: 0.5rem;
     padding: 0px 20px;
     /* position: relative; */
 }
-.dropdown{
+
+.dropdown {
     float: right;
     border: 1px solid rgb(205, 51, 205);
     border-radius: 0.5rem;
@@ -44,101 +50,118 @@ nav{
 }
 
 /* CSS for CARD */
-.card-title{
+.card-title {
     font-size: 17px;
     line-height: 1.3;
     font-weight: 600;
     padding: 0px 30px;
 }
-.card-title a{
+
+.card-title a {
     text-decoration: none;
     color: #EF0016;
 }
-.btn-card{
+
+.btn-card {
     padding-top: 10px;
     padding-left: 30px;
 }
-.btn-xem{
+
+.btn-xem {
     border: 3px solid #EF0016;
     text-decoration: none;
     color: #EF0016;
     padding: 5px 15px;
     border-radius: 0.5rem;
 }
-.btn-xem:hover{
+
+.btn-xem:hover {
     background-color: red;
     color: white;
 }
-.col .bg-card{
+
+.col .bg-card {
     background-color: rgba(244, 244, 244);
 }
-.card-text{
+
+.card-text {
     font-size: 15px;
     padding: 0px 30px;
 }
-.card-img-top{
+
+.card-img-top {
     transform: scale(1);
     transition: all 0.5s;
 }
-.card-img-top:hover{
+
+.card-img-top:hover {
     transform: scale(1.1);
     border-radius: 1rem;
 }
-.img-sukien img{
+
+.img-sukien img {
     height: 250px;
     width: 100%;
 }
-.list-grid{
+
+.list-grid {
     margin: 0px 70px;
 }
 
 /* Phần số trang card */
-.number-page{
+.number-page {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.number-page ul li a{
+.number-page ul li a {
     text-decoration: none;
     margin-right: 30px;
     font-weight: 600;
     font-size: 15px;
 }
-.trang1 a{
+
+.trang1 a {
     background-color: rgba(238, 139, 174);
     color: white;
     padding: 5px 10px;
     border-radius: 50px;
 }
-.trang2 a{
+
+.trang2 a {
     color: #444;
 }
-.next a{
+
+.next a {
     color: #EE8BAE;
 }
-.bd-number a{
+
+.bd-number a {
     background-color: white;
     padding: 5px 10px;
     border-radius: 50px;
 }
-.bd-number a:hover{
+
+.bd-number a:hover {
     background-color: rgba(238, 139, 174);
     color: white;
 }
-.trang-cuoi a{
+
+.trang-cuoi a {
     border: 2px solid #EE8BAE;
     padding: 8px 15px;
     border-radius: 6px;
     color: rgba(238, 139, 174);
 }
-.trang-cuoi a:hover{
+
+.trang-cuoi a:hover {
     background-color: #EE8BAE;
     color: white;
 }
 
 
 /* Phần slide video */
-.video iframe{
+.video iframe {
     border-radius: 1rem;
     height: 300px;
     width: 100%;
@@ -146,53 +169,62 @@ nav{
     border-width: 4px;
     padding: 5px 8px;
 }
-.info-video h3{
+
+.info-video h3 {
     font-size: 20px;
     color: rgba(239, 0, 22);
     line-height: 1.4;
     font-weight: 700;
 }
-.content-text{
+
+.content-text {
     line-height: 1.5;
     font-size: 18px;
     color: rgba(108, 108, 108);
     padding-right: 50px;
 }
-.border-list-video{
+
+.border-list-video {
     height: 5px;
     background-color: rgba(238, 139, 174);
-    margin: 20px 170px;   
-    
+    margin: 20px 170px;
+
 }
-.bd-slide img{
+
+.bd-slide img {
     border-radius: 1rem;
 }
-.pad-sl{
+
+.pad-sl {
     padding-left: 35px;
 }
-.carousel-inner ul{
+
+.carousel-inner ul {
     padding: 0px 130px;
 }
-.bg-button .ic{
-    background-color:#dd2566;
+
+.bg-button .ic {
+    background-color: #dd2566;
     border-radius: 50px;
 }
 
 
 
 /* Phần ảnh của footer */
-.img-footer{
+.img-footer {
     background-image: url(https://www.mihaohao.vn/wp-content/uploads/2021/04/recruit.png);
     background-size: cover;
     padding: 60px 0px 60px 0px;
     background-position: center center;
 }
-.content-footer{
+
+.content-footer {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.text-img h3{
+
+.text-img h3 {
     color: #E7061F;
     font-weight: 550;
     font-family: Nunito Sans, sans-serif;
@@ -200,7 +232,8 @@ nav{
     font-size: 4vw;
     text-transform: uppercase;
 }
-.btn-img button{
+
+.btn-img button {
     color: #E7061F;
     border: 4px solid #E7061F;
     background-color: #FFFFFF00;
@@ -209,23 +242,25 @@ nav{
     padding: 15px 30px;
     line-height: 1;
 }
-.btn-img button:hover{
-    background-color:#E7061F;
+
+.btn-img button:hover {
+    background-color: #E7061F;
     color: white;
 }
 
 
 
 /* Phần footer */
-footer{
+footer {
     background-color: rgba(244, 244, 244);
 }
 
-.footer-link ul{
+.footer-link ul {
     display: flex;
     list-style-type: none;
 }
-.footer-link ul li a{
+
+.footer-link ul li a {
     text-decoration: none;
     text-transform: uppercase;
     color: #444;
@@ -234,3 +269,20 @@ footer{
     font-family: Nunito Sans, sans-serif;
     font-size: 16px;
 }
+
+
+
+
+
+
+/* sửa lại hiệu ứng hover cho card */
+/* begin */
+.card.h-100.bg-card {
+    overflow: hidden;
+}
+
+.img-sukien {
+    overflow: hidden;
+}
+
+/* end */

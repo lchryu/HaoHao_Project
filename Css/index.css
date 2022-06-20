@@ -40,66 +40,87 @@
 }
 
 /* CSS for CARD */
-.card-title{
+.card-title {
     /* max-height: 50px; */
     font-size: 17px;
     line-height: 1.3;
     font-weight: 600;
     padding: 0px 30px;
 }
-.card-title a{
+
+.card-title a {
     text-decoration: none;
     color: #EF0016;
 }
-.btn-card{
+
+.btn-card {
     padding-top: 10px;
     padding-left: 30px;
 }
-.btn-xem{
+
+.btn-xem {
     border: 3px solid #EF0016;
     text-decoration: none;
     color: #EF0016;
     padding: 5px 15px;
     border-radius: 0.5rem;
 }
-.btn-xem:hover{
+
+.btn-xem:hover {
     background-color: red;
     color: white;
 }
-.col .bg-card{
+
+.col .bg-card {
     background-color: rgba(244, 244, 244);
 }
-.card-text{
+
+.card-text {
     font-size: 15px;
     padding: 0px 30px;
 }
-.card-img-top{
+
+.card-img-top {
     transform: scale(1);
     transition: all 0.5s;
 }
-.card-img-top:hover{
+
+.card-img-top:hover {
     transform: scale(1.1);
     border-radius: 1rem;
+    transform: scale(1.2);
+    /* Safari & Google Chrome */
+    -webkit-transform: scale(1.2);
+    /* Mozilla Firefox */
+    -moz-transform: scale(1.2);
+    /* Opera */
+    -o-transform: scale(1.2);
+    /* IE 9 */
+    -ms-transform: scale(1.2);
+    cursor: pointer;
 }
-.img-sukien img{
+
+.img-sukien img {
     height: 250px;
     width: 100%;
 }
-.list-grid{
+
+.list-grid {
     margin: 0px 70px;
 }
 
 
 /* Phần footer */
-footer{
+footer {
     background-color: rgba(244, 244, 244);
 }
 
-.footer-link ul{
+.footer-link ul {
     display: flex;
     list-style-type: none;
 }
-.footer-link ul li a{
+
+.footer-link ul li a {
     text-decoration: none;
     text-transform: uppercase;
     color: #444;
@@ -108,3 +129,16 @@ footer{
     font-family: Nunito Sans, sans-serif;
     font-size: 16px;
 }
+
+
+/* sửa lại hiệu ứng hover cho card */
+/* begin */
+.card.h-100.bg-card {
+    overflow: hidden;
+}
+
+.img-sukien {
+    overflow: hidden;
+}
+
+/* end */
