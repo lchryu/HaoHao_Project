@@ -34,12 +34,13 @@ btnLogin.onclick = function () {
         // window.location.assign = "Admin.html";
         // Window.location.href = "https://lucute2001.github.io/HaoHao_Project/Admin/Admin.html";
         // Window.location.open = "https://lucute2001.github.io/HaoHao_Project/Admin/Admin.html";
+        window.location.href = "./Admin.html";
         // window.open('Admin.html');
-        window.location = "https://www.facebook.com";
     }
     else {
         alert("Login failed");
     }
+    // window.location = "https://www.facebook.com";
 }
 // ---- end event login ----
 
