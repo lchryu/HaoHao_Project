@@ -157,6 +157,8 @@ var accounts = [
 	}
 ]
 
+var accIndex = document.getElementById('indexAccount').value = accounts.length + 1
+
 // Load những tài khoản mặc định vào table
 renderAccount()
 
