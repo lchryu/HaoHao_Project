@@ -133,7 +133,34 @@ Highcharts.chart('chart1', {
 	}]
 });
 //tab tài khoản
-var accounts = []
+var accounts = [
+	{
+		Index: 1,
+		Id: 'ChungHoi',
+		Name: 'Lương Chung Hội',
+		Password: 'ChungHoi',
+		Numbers: 'lch.ryu2001@gmail.com'
+	},
+	{
+		Index: 2,
+		Id: 'ThanhThao2k2',
+		Name: 'Trần Thanh Thảo',
+		Password: 'ThanhThao2k2',
+		Numbers: 'ThanhThao2k2@gmail.com'
+	},
+	{
+		Index: 3,
+		Id: 'VanPhu2k2',
+		Name: 'Bùi Văn Phú',
+		Password: 'VanPhu2k2',
+		Numbers: 'VanPhu2k2@gmail.com'
+	}
+]
+
+// Load những tài khoản mặc định vào table
+renderAccount()
+
+// sự kiện khi ấn nút thêm tài khoản
 function addAccount() {
 	var accIndex = document.getElementById('indexAccount').value
 	var accId = document.getElementById('idAccount').value
@@ -159,37 +186,42 @@ function addAccount() {
 	renderAccount()
 	clearAccount()
 }
+
+
 //In thông tin sản phẩm
 function renderAccount() {
-	table = `<tr>
-   <th scope="col">STT</th>
-   <th scope="col">Họ tên</th>
-   <th scope="col">Tên tài khoản</th>
-   <th scope="col">Mật khẩu</th>
-   <th scope="col">Số điện thoại/email</th>
-   <th scope="col">Sửa/Xóa</th>
- </tr>`
+	table =
+		`<tr>
+			<th scope="col">STT</th>
+			<th scope="col">Họ tên</th>
+			<th scope="col">Tên tài khoản</th>
+			<th scope="col">Mật khẩu</th>
+			<th scope="col">Số điện thoại/email</th>
+			<th scope="col">Sửa/Xóa</th>
+		</tr>`
 	for (let i = 0; i < accounts.length; i++) {
-		table += `<tr>
-      <th scope="col">${accounts[i].Index}</th>
-      <th scope="col">${accounts[i].Name}</th>
-      <th scope="col">${accounts[i].Id}</th>
-      <th scope="col">${accounts[i].Password}</th>
-      <th scope="col">${accounts[i].Numbers}</th>
-      <th scope="col">
-      <button class="btn btn-warning" onclick="editAccount(${accounts[i].Index})">Sửa</button>
-      <button class="btn btn-danger" onclick="deleteAccount(${accounts[i].Index})">Xóa</button>
-      </th>
-      </tr>`
+		table +=
+			`<tr>
+			<th scope="col">${accounts[i].Index}</th>
+			<th scope="col">${accounts[i].Name}</th>
+			<th scope="col">${accounts[i].Id}</th>
+			<th scope="col">${accounts[i].Password}</th>
+			<th scope="col">${accounts[i].Numbers}</th>
+			<th scope="col">
+				<button class="btn btn-warning" onclick="editAccount(${accounts[i].Index})">Sửa</button>
+				<button class="btn btn-danger" onclick="deleteAccount(${accounts[i].Index})">Xóa</button>
+			</th>
+		</tr>`
 	}
 	document.getElementById('renderAccount').innerHTML = table
 }
 function clearAccount() {
-	var accId = document.getElementById('idAccount').value = ""
+	let newIndex = accounts.length + 1;
+	var accId = document.getElementById('idAccount').value = "";
 	var accName = document.getElementById('nameAccount').value = ""
 	var accNumbers = document.getElementById('numbersAccount').value = ""
 	var accPassword = document.getElementById('passwordAccount').value = ""
-	var accIndex = document.getElementById('indexAccount').value = ""
+	var accIndex = document.getElementById('indexAccount').value = newIndex;
 }
 function deleteAccount(x) {
 	for (let i = 0; i < accounts.length; i++) {
@@ -243,25 +275,26 @@ function addPost() {
 //In thông tin sản phẩm
 function renderPost() {
 	table = `<tr>
-	<th scope="col">ID</th>
-	<th scope="col">Tiêu đề</th>
-	<th scope="col">Nội dung</th>
-	<th scope="col">Ảnh đính kèm</th>
-	<th scope="col">Mô tả</th>
-	<th scope="col">Sửa/Xóa</th>
-</tr>`
+				<th scope="col">ID</th>
+				<th scope="col">Tiêu đề</th>
+				<th scope="col">Nội dung</th>
+				<th scope="col">Ảnh đính kèm</th>
+				<th scope="col">Mô tả</th>
+				<th scope="col">Sửa/Xóa</th>
+			</tr>`
+			
 	for (let i = 0; i < Posts.length; i++) {
 		table += `<tr>
-   <th scope="col">${Posts[i].IdPost}</th>
-   <th scope="col">${Posts[i].HeadPost}</th>
-   <th scope="col">${Posts[i].ContentPost}</th>
-   <th scope="col"><img src=${Posts[i].ImagesPost}></th>
-   <th scope="col">${Posts[i].DescPost}</th>
-   <th scope="col">
-      <button class="btn btn-warning" onclick="editItemPost(${Posts[i].IdPost})">Sửa</button>
-      <button class="btn btn-danger" onclick="deleteItemPost(${Posts[i].IdPost})">Xóa</button>
-   </th>
-   </tr>`
+					<th scope="col">${Posts[i].IdPost}</th>
+					<th scope="col">${Posts[i].HeadPost}</th>
+					<th scope="col">${Posts[i].ContentPost}</th>
+					<th scope="col"><img src=${Posts[i].ImagesPost}></th>
+					<th scope="col">${Posts[i].DescPost}</th>
+					<th scope="col">
+						<button class="btn btn-warning" onclick="editItemPost(${Posts[i].IdPost})">Sửa</button>
+						<button class="btn btn-danger" onclick="deleteItemPost(${Posts[i].IdPost})">Xóa</button>
+					</th>
+				</tr>`
 	}
 	document.getElementById('renderPost').innerHTML = table;
 }
