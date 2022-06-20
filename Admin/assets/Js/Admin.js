@@ -18,8 +18,73 @@ function openTabs(el) {
 	btn.classList.add("active");
 	// các button mà chúng ta click vào sẽ được add class active
 }
+
+
+
+
+
 //  tab danh sách sản phẩm
-var data = []
+var data = [
+	{
+		Id: 1,
+		Name: 'Hảo hảo tôm chua cay',
+		Images: './assets/img/hao-hao-tom-chua-cay-acecook.jpg',
+		Numbers: '1000',
+		Price: '3500'
+	},
+	{
+		Id: 2,
+		Name: 'Hảo hảo sa tế hành tím',
+		Images: './assets/img/hao-hao-sa-te-hanh-tim-acecook.jpg',
+		Numbers: '2000',
+		Price: '3500'
+	},
+	{
+		Id: 3,
+		Name: 'Hảo hảo sườn heo tỏi phi',
+		Images: './assets/img/hao-hao-suon-heo-toi-phi-acecook.jpg',
+		Numbers: '3000',
+		Price: '3500'
+	},
+	{
+		Id: 4,
+		Name: 'Hảo hảo mì xào tôm hành',
+		Images: './assets/img/hao-hao-mi-xao-tom-hanh-acecook.jpg',
+		Numbers: '4000',
+		Price: '3500'
+	},
+]
+
+// render()
+// begin
+table = `<tr>
+<th scope="col">Mã sản phẩm</th>
+<th scope="col">Tên sản phẩm</th>
+<th scope="col">Ảnh sản phẩm</th>
+<th scope="col">Số lượng</th>
+<th scope="col">Giá sản phẩm</th>
+<th scope="col">Sửa/Xóa</th>
+</tr>`
+
+
+
+for (let i = 0; i < data.length; i++) {
+	table +=
+		`<tr>
+<th scope="col">${data[i].Id}</th>
+<th scope="col">${data[i].Name}</th>
+<th scope="col"><img style="height: 50px;" src='${data[i].Images}'></th>
+<th scope="col">${data[i].Numbers}</th>
+<th scope="col">${data[i].Price}</th>
+<th scope="col">
+<button class="btn btn-warning" onclick="editItem(${data[i].Id})">Sửa</button>
+<button class="btn btn-danger" onclick="deleteItem(${data[i].Id})">Xóa</button>
+</th>
+</tr>`
+}
+document.getElementById('render').innerHTML = table
+// end
+
 function add() {
 	var itemHeaderPost = document.getElementById('id').value
 	var itemNamePost = document.getElementById('name').value
@@ -43,22 +108,35 @@ function add() {
 	render()
 	clear()
 }
+var srcImg;
+
 //In thông tin sản phẩm
 function render() {
+	// xử lý ảnh cho thẻ input[type=file] và lấy ra đường dẫn ảnh
+	var upload = document.querySelector('#images');
+	upload.addEventListener('change', function (e) {
+		var img = document.createElement('img');
+		console.log('đây là link ảnh', URL.createObjectURL(upload.files[0]));
+		srcImg = URL.createObjectURL(upload.files[0]);
+	})
+
 	table = `<tr>
-   <th scope="col">Mã sản phẩm</th>
-   <th scope="col">Tên sản phẩm</th>
-   <th scope="col">Ảnh sản phẩm</th>
-   <th scope="col">Số lượng</th>
-   <th scope="col">Giá sản phẩm</th>
-   <th scope="col">Sửa/Xóa</th>
-   </tr>`
+				<th scope="col">Mã sản phẩm</th>
+				<th scope="col">Tên sản phẩm</th>
+				<th scope="col">Ảnh sản phẩm</th>
+				<th scope="col">Số lượng</th>
+				<th scope="col">Giá sản phẩm</th>
+				<th scope="col">Sửa/Xóa</th>
+			</tr>`
+
+
+
 	for (let i = 0; i < data.length; i++) {
 		table +=
 			`<tr>
 			<th scope="col">${data[i].Id}</th>
 			<th scope="col">${data[i].Name}</th>
-			<th scope="col"><img src=${data[i].Images}></th>
+			<th scope="col"><img style="height: 50px;" src='${srcImg}'></th>
 			<th scope="col">${data[i].Numbers}</th>
 			<th scope="col">${data[i].Price}</th>
 			<th scope="col">
@@ -284,7 +362,7 @@ function renderPost() {
 				<th scope="col">Mô tả</th>
 				<th scope="col">Sửa/Xóa</th>
 			</tr>`
-			
+
 	for (let i = 0; i < Posts.length; i++) {
 		table += `<tr>
 					<th scope="col">${Posts[i].IdPost}</th>
