@@ -1,7 +1,7 @@
 var users = [
     {
-        username: "LuongChungHoi",
-        password: "LuongChungHoi",
+        username: "ChungHoi",
+        password: "ChungHoi",
     },
     {
         username: "ThanhThao2k2",
@@ -12,6 +12,34 @@ var users = [
         password: "VanPhu2k2",
     },
 ]
+
+
+// ---- begin event login ----
+var txtUserName = document.getElementById("txtUserID");
+var txtPassword = document.getElementById("txtPassword");
+
+var btnLogin = document.getElementById("btnCheck");
+
+
+btnLogin.onclick = function () {
+    let count = 0;
+    users.forEach((user) => {
+        if (txtUserName.value == user.username && txtPassword.value == user.password) {
+            count++;
+        }
+    })
+
+    if (count == 1) {
+        alert("Login success");
+        // window.location.assign = "Admin.html";
+        window.open('Admin.html');
+    }
+    else {
+        alert("Login failed");
+    }
+}
+// ---- end event login ----
+
 
 
 $(document).ready(function () {
