@@ -32,7 +32,8 @@ btnLogin.onclick = function () {
     if (count == 1) {
         alert("Login success");
         // window.location.assign = "Admin.html";
-        Window.location.assign = "https://lucute2001.github.io/HaoHao_Project/Admin/Admin.html";
+        // Window.location.assign = "https://lucute2001.github.io/HaoHao_Project/Admin/Admin.html";
+        Window.location.open = "https://lucute2001.github.io/HaoHao_Project/Admin/Admin.html";
         // window.open('Admin.html');
     }
     else {
