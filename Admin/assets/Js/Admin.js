@@ -52,49 +52,46 @@ var data = [
 		Images: './assets/img/hao-hao-mi-xao-tom-hanh-acecook.jpg',
 		Numbers: '4000',
 		Price: '3500'
-	},
+	}
 ]
 
-// render()
+
+let table = ''
+
 // begin
-table = `<tr>
-<th scope="col">Mã sản phẩm</th>
-<th scope="col">Tên sản phẩm</th>
-<th scope="col">Ảnh sản phẩm</th>
-<th scope="col">Số lượng</th>
-<th scope="col">Giá sản phẩm</th>
-<th scope="col">Sửa/Xóa</th>
-</tr>`
+render()
 
-
-
-for (let i = 0; i < data.length; i++) {
-	table +=
-		`<tr>
-<th scope="col">${data[i].Id}</th>
-<th scope="col">${data[i].Name}</th>
-<th scope="col"><img style="height: 50px;" src='${data[i].Images}'></th>
-<th scope="col">${data[i].Numbers}</th>
-<th scope="col">${data[i].Price}</th>
-<th scope="col">
-<button class="btn btn-warning" onclick="editItem(${data[i].Id})">Sửa</button>
-<button class="btn btn-danger" onclick="deleteItem(${data[i].Id})">Xóa</button>
-</th>
-</tr>`
-}
-document.getElementById('render').innerHTML = table
 // end
+
+
+let srcImg = '';
+
+
+// xử lý ảnh cho thẻ input[type=file] và lấy ra đường dẫn ảnh
+var upload = document.querySelector('#images');
+upload.addEventListener('change', function (e) {
+	console.log(typeof URL.createObjectURL(upload.files[0]))
+	console.log('đây là link ảnh', URL.createObjectURL(upload.files[0]));
+	srcImg = (URL.createObjectURL(upload.files[0])).toString();
+	srcImga = URL.createObjectURL(e.target.files[0]);
+})
+
+
 
 function add() {
 	var itemHeaderPost = document.getElementById('id').value
 	var itemNamePost = document.getElementById('name').value
-	var itemImgPost = document.getElementById('images').value
+	// var itemImgPost = document.getElementById('images').value
 	var itemDescPost = document.getElementById('numbers').value
 	var itemPrice = document.getElementById('price').value
+
+
+
 	var item = {
 		Id: itemHeaderPost,
 		Name: itemNamePost,
-		Images: itemImgPost,
+		// Images: itemImgPost,
+		Images: srcImg,
 		Numbers: itemDescPost,
 		Price: itemPrice
 	}
@@ -108,42 +105,36 @@ function add() {
 	render()
 	clear()
 }
-var srcImg;
+
 
 //In thông tin sản phẩm
 function render() {
-	// xử lý ảnh cho thẻ input[type=file] và lấy ra đường dẫn ảnh
-	var upload = document.querySelector('#images');
-	upload.addEventListener('change', function (e) {
-		var img = document.createElement('img');
-		console.log('đây là link ảnh', URL.createObjectURL(upload.files[0]));
-		srcImg = URL.createObjectURL(upload.files[0]);
-	})
 
-	table = `<tr>
-				<th scope="col">Mã sản phẩm</th>
-				<th scope="col">Tên sản phẩm</th>
-				<th scope="col">Ảnh sản phẩm</th>
-				<th scope="col">Số lượng</th>
-				<th scope="col">Giá sản phẩm</th>
-				<th scope="col">Sửa/Xóa</th>
-			</tr>`
+	table =
+		`<tr>
+			<th scope="col">Mã sản phẩm</th>
+			<th scope="col">Tên sản phẩm</th>
+			<th scope="col">Ảnh sản phẩm</th>
+			<th scope="col">Số lượng</th>
+			<th scope="col">Giá sản phẩm</th>
+			<th scope="col">Sửa/Xóa</th>
+		</tr>`
 
 
 
 	for (let i = 0; i < data.length; i++) {
 		table +=
 			`<tr>
-			<th scope="col">${data[i].Id}</th>
-			<th scope="col">${data[i].Name}</th>
-			<th scope="col"><img style="height: 50px;" src='${srcImg}'></th>
-			<th scope="col">${data[i].Numbers}</th>
-			<th scope="col">${data[i].Price}</th>
-			<th scope="col">
-				<button class="btn btn-warning" onclick="editItem(${data[i].Id})">Sửa</button>
-				<button class="btn btn-danger" onclick="deleteItem(${data[i].Id})">Xóa</button>
-			</th>
-		</tr>`
+				<th scope="col">${data[i].Id}</th>
+				<th scope="col">${data[i].Name}</th>
+				<th scope="col"><img style="height: 50px;" src=${data[i].Images}></th>
+				<th scope="col">${data[i].Numbers}</th>
+				<th scope="col">${data[i].Price}</th>
+				<th scope="col">
+					<button class="btn btn-warning" onclick="editItem(${data[i].Id})">Sửa</button>
+					<button class="btn btn-danger" onclick="deleteItem(${data[i].Id})">Xóa</button>
+				</th>
+			</tr>`
 	}
 	document.getElementById('render').innerHTML = table
 }
@@ -167,12 +158,16 @@ function editItem(x) {
 		if (data[i].Id == x) {
 			document.getElementById('id').value = data[i].Id
 			document.getElementById('name').value = data[i].Name
-			document.getElementById('images').value = data[i].Images
+			// document.getElementById('images').value = data[i].Images
+			srcImg = data[i].Images
 			document.getElementById('numbers').value = data[i].Numbers
 			document.getElementById('price').value = data[i].Price
 		}
 	}
 }
+
+
+
 //Biểu đồ doanh số
 Highcharts.chart('chart1', {
 	title: {
