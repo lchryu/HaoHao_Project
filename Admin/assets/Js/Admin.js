@@ -70,10 +70,10 @@ let srcImg = '';
 // xử lý ảnh cho thẻ input[type=file] và lấy ra đường dẫn ảnh
 var upload = document.querySelector('#images');
 upload.addEventListener('change', function (e) {
-	console.log(typeof URL.createObjectURL(upload.files[0]))
-	console.log('đây là link ảnh', URL.createObjectURL(upload.files[0]));
+	// console.log(typeof URL.createObjectURL(upload.files[0]))
+	// console.log('đây là link ảnh', URL.createObjectURL(upload.files[0]));
 	srcImg = (URL.createObjectURL(upload.files[0])).toString();
-	srcImga = URL.createObjectURL(e.target.files[0]);
+	// srcImga = URL.createObjectURL(e.target.files[0]);
 })
 
 
@@ -322,18 +322,33 @@ function editAccount(x) {
 
 //  tab ds các bài đăng
 var Posts = []
+
+
+let srcImgPost = '';
+
+
+// xử lý ảnh cho thẻ input[type=file] và lấy ra đường dẫn ảnh
+var uploadPost = document.querySelector('#imagesPost');
+uploadPost.addEventListener('change', function (e) {
+	srcImgPost = (URL.createObjectURL(uploadPost.files[0])).toString();
+})
+
+
+
+
+
+
 function addPost() {
 	var itemIdPost = document.getElementById('idPost').value;
 	var itemHeaderPost = document.getElementById('headerPost').value;
 	var itemContentPost = document.getElementById('contentPost').value;
-	var itemImgPost = document.getElementById('imagesPost').value;
+	// var itemImgPost = document.getElementById('imagesPost').value;
 	var itemDescPost = document.getElementById('descPost').value;
-	// var itemPrice = document.getElementById('price').value
 	var item = {
 		IdPost: itemIdPost,
 		HeadPost: itemHeaderPost,
 		ContentPost: itemContentPost,
-		ImagesPost: itemImgPost,
+		ImagesPost: srcImgPost,
 		DescPost: itemDescPost,
 	}
 	let index = Posts.findIndex((c) => c.IdPost == item.IdPost)
@@ -347,7 +362,7 @@ function addPost() {
 	renderPost();
 	clearPost();
 }
-//In thông tin sản phẩm
+//In thông tin bài đăng
 function renderPost() {
 	table = `<tr>
 				<th scope="col">ID</th>
@@ -363,7 +378,7 @@ function renderPost() {
 					<th scope="col">${Posts[i].IdPost}</th>
 					<th scope="col">${Posts[i].HeadPost}</th>
 					<th scope="col">${Posts[i].ContentPost}</th>
-					<th scope="col"><img src=${Posts[i].ImagesPost}></th>
+					<th scope="col"><img style="height: 50px;" src=${Posts[i].ImagesPost}></th>
 					<th scope="col">${Posts[i].DescPost}</th>
 					<th scope="col">
 						<button class="btn btn-warning" onclick="editItemPost(${Posts[i].IdPost})">Sửa</button>
@@ -394,7 +409,8 @@ function editItemPost(x) {
 			document.getElementById('idPost').value = Posts[i].IdPost;
 			document.getElementById('headerPost').value = Posts[i].HeadPost;
 			document.getElementById('contentPost').value = Posts[i].ContentPost;
-			document.getElementById('imagesPost').value = Posts[i].ImagesPost;
+			// document.getElementById('imagesPost').value = Posts[i].ImagesPost;
+			srcImgPost = Posts[i].Images;
 			document.getElementById('descPost').value = Posts[i].DescPost;
 		}
 	}
