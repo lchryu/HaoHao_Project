@@ -1,58 +1,49 @@
 /* CSS for HaoHao-Title */
-.HaoHao-title{
-    background-color: #EE8BAE;
-    height: 65px;
-    z-index: 1;
-    position: fixed !important;
-    width: 100%;
+.icon {
+    margin: 8px;
 }
-.Title-text{
-    justify-content: center;
+
+.test {
+    height: 1000px;
 }
-.navbar-nav a{
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: Nunito Sans, sans-serif;
-    margin: 0px 20px;
+
+.navbar li:hover a {
+    background-color: #e96593;
+    padding: 100px 0px;
+}
+
+.form-control {
+    border: 2px solid var(--bs-pink);
+    border-radius: 22px;
+    padding: 10px 0px;
+}
+.form-control::placeholder {
+    padding-left: 10px;
+    color: black;
+    opacity: 1;
     font-weight: 600;
 }
-.nav:hover{
-    color: white;
-    background-color: #e96593;
-    /* padding: 5px; */
+.form-select {
+    border: 2px solid var(--bs-pink);
+    border-radius: 22px;
+    padding: 10px 0px;
 }
-.logo{
-    margin-left: 150px;
-}
-.icons ul li{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
+/* Phần footer */
+footer{
+    background-color: rgba(244, 244, 244);
 }
 
-
-/* CSS for button */
-.list{
-    margin: 0px 70px;
-    padding: 0px 100px;
+.footer-link ul{
+    display: flex;
+    list-style-type: none;
 }
-.row{
-    padding: 56px 0px 5px 0px;
+.footer-link ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #444;
+    margin-left: 20px;
+    font-weight: 600;
+    font-family: Nunito Sans, sans-serif;
+    font-size: 16px;
 }
-.heading-styled{
-    padding: 5px 0px; 
-}
-.btn-color{
-    background-color: #EE8BAE;
-    border-radius: 0.5rem;
-    padding: 0px 20px;
-    /* position: relative; */
-}
-.dropdown{
-    float: right;
-    border: 1px solid rgb(205, 51, 205);
-    border-radius: 0.5rem;
-    padding: 3px 5px;
-} 
 
