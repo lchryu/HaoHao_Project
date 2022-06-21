@@ -321,8 +321,39 @@ function editAccount(x) {
 
 
 //  tab ds các bài đăng
-var Posts = []
+var Posts = [
+	{
+		IdPost: 1,
+		HeadPost: "MUSIC BOX”: ÂM NHẠC ĐI XA NỐI YÊU THƯƠNG LẠI GẦN",
+		ContentPost: "Với chủ đề tình yêu, “Hảo Hảo Music Box” đã khiến hàng triệu trái tim rung cảm với đêm diễn tại Đà Lạt. Chương trình không chỉ mang đến những bản tình ca đặc sắc mà đó còn gửi gắm thông điệp yêu thương ý nghĩa. Như đã bật mí về địa điểm trước đó, ngày 09/03/2022 vừa qua, dân tình được dịp bấn loạn với sự kiện âm nhạc trực tuyến “Hảo Hảo Music Box” diễn ra tại tỉnh Lâm Đồng. Với sự",
+		ImagesPost: "./assets/img/Post1.jpg",
+		DescPost: "Bài viết số 1",
+	},
+	{
+		IdPost: 2,
+		HeadPost: "HẢO HẢO LÀ ĐƠN VỊ TÀI TRỢ CHÍNH THỨC TẠI GIẢI ĐẤU TRƯỜNG DANH VỌNG MÙA XUÂN 2022",
+		ContentPost: "Đấu Trường Danh Vọng mùa Xuân 2022 – mùa giải đầu tiên trong năm 2022 thuộc hệ thống giải đấu chuyên nghiệp cấp cao nhất của Liên Quân Mobile tại Việt Nam hân hạnh được tài trợ bởi thương hiệu Mì Hảo Hảo. Đây là lần thứ hai một thương hiệu mì ăn liền của Acecook đồng hành cùng tựa game có lượng người chơi tích cực hàng tháng cao nhất tại Việt Nam trong năm 2021. Điều",
+		ImagesPost: "./assets/img/Post2.jpg",
+		DescPost: "Bài viết số 2",
+	},
+	{
+		IdPost: 3,
+		HeadPost: "HẢO HẢO – MUSIC BOX”: TRAO NIỀM HỨNG KHỞI, KẾT TRIỆU YÊU THƯƠNG",
+		ContentPost: "Năm 2021 là một khoảng thời gian cực kỳ khó khăn, sau đại dịch COVID-19, Việt Nam có hơn hàng ngàn trẻ em vào hoàn cảnh khó khăn khi mất đi người thân, chính vì lẽ đó chúng tôi – Hảo Hảo đến từ Acecook Việt Nam phối hợp cùng Quỹ Bảo Trơ Trẻ Em Việt Nam tổ chức chương trình “Music Box” không ngoài mục đích cùng với người tiêu dùng chung tay góp sức vào việc chăm lo tương lai",
+		ImagesPost: "./assets/img/Post3.jpg",
+		DescPost: "Bài viết số 3",
+	},
+	{
+		IdPost: 4,
+		HeadPost: "HẢO HẢO – MÌ ĂN LIỀN SỐ 1 TẠI KHU VỰC THÀNH THỊ 2019",
+		ContentPost: "Hảo Hảo ngày càng khẳng định vị trí của mình trong ngành hàng tiêu dùng nhanh nói chung và ngành thực phẩm nói riêng ở Việt Nam. Danh mì Hảo Hảo – tưởng quen mà lạ, tưởng cũ mà mới, luôn đầy hứng khởi cho tất cả mọi người Nếu những con số dễ dàng nói lên được vị trí của một nhãn hàng trên thị trường, thì việc trở thành “thương hiệu quốc dân” sẽ khẳng định được sự yêu thích của",
+		ImagesPost: "./assets/img/Post4.jpg",
+		DescPost: "Bài viết số 4",
+	},
+]
 
+
+renderPost();
 
 let srcImgPost = '';
 
