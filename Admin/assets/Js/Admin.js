@@ -441,7 +441,7 @@ function editItemPost(x) {
 			document.getElementById('headerPost').value = Posts[i].HeadPost;
 			document.getElementById('contentPost').value = Posts[i].ContentPost;
 			// document.getElementById('imagesPost').value = Posts[i].ImagesPost;
-			srcImgPost = Posts[i].Images;
+			srcImgPost = Posts[i].ImagesPost;
 			document.getElementById('descPost').value = Posts[i].DescPost;
 		}
 	}
