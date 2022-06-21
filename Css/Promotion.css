@@ -82,6 +82,16 @@ nav{
 .card-img-top:hover{
     transform: scale(1.1);
     border-radius: 1rem;
+    transform: scale(1.2);
+    /* Safari & Google Chrome */
+    -webkit-transform: scale(1.2);
+    /* Mozilla Firefox */
+    -moz-transform: scale(1.2);
+    /* Opera */
+    -o-transform: scale(1.2);
+    /* IE 9 */
+    -ms-transform: scale(1.2);
+    cursor: pointer;
 }
 .img-sukien img{
     height: 250px;
@@ -89,6 +99,13 @@ nav{
 }
 .list-grid{
     margin: 0px 70px;
+}
+.card.h-100.bg-card {
+    overflow: hidden;
+}
+
+.img-sukien {
+    overflow: hidden;
 }
 
 /* Phần số trang card */

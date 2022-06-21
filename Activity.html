@@ -72,11 +72,11 @@
 
           <div class="col heading-styled">
             <div class="btn-group btn-color" role="group" aria-label="Basic example">
-              <button type="button" class="btn" style="color: #CC0C50;">
+              <button type="button" class="btn" style="color: #CC0C50;" onclick="displayEvent()">
                 <h5 style="font-weight: 600;">SỰ KIỆN</h5>
               </button>
               <h3 style="padding-top: 1px;"><span style="color: white;">|</span></h3>
-              <button type="button" class="btn" style="color: white;">
+              <button type="button" class="btn" style="color: white;" onclick="displayAction()">
                 <h5 style="font-weight: 600;">HOẠT ĐỘNG</h5>
               </button>
             </div>
@@ -98,143 +98,146 @@
     </div>
 
     <!-- Phần các thẻ cards -->
-    <div class="list-grid">
-      <div class="row row-cols-1 row-cols-md-3 g-4 card-gap">
-
-        <div class="col">
-          <div class="card h-100 bg-card" style="border-radius: 20px;">
-            <div class="img-sukien">
-              <img src="Img/Photo/Activity_Card1.jpg" class="card-img-top" style="border-radius: 20px 20px 0px 0px;"
-                alt="...">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">
-                <a href="">
-                  “HẢO HẢO – MUSIC BOX”: NƠI KẾT TRIỆU YÊU THƯƠNG ĐẾN...
-                </a>
-              </h5>
-              <div class="card-text">
-                Vào ngày 29 và 30 tháng 03, sau khi nhận được tiền hỗ trợ lên đến 600 triệ...
+    <div id="holder">
+      <div class="list-grid">
+        <div class="row row-cols-1 row-cols-md-3 g-4 card-gap">
+  
+          <div class="col">
+            <div class="card h-100 bg-card" style="border-radius: 20px;">
+              <div class="img-sukien">
+                <img src="Img/Photo/Activity_Card1.jpg" class="card-img-top" style="border-radius: 20px 20px 0px 0px;"
+                  alt="...">
               </div>
-              <div class="btn-card">
-                <a href="./Subpage/Music_box_sp.html" class="btn-xem">Xem thêm</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 bg-card" style="border-radius: 20px;">
-            <div class="img-sukien">
-              <img src="Img/Photo/Activity_Card2.jpg" class="card-img-top" style="border-radius: 20px 20px 0px 0px;"
-                alt="...">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">
-                <a href="">
-                  “HẢO HẢO – MUSIC BOX”: NƠI KẾT TRIỆU YÊU THƯƠNG ĐẾN...
-                </a>
-              </h5>
-              <div class="card-text">
-                Bởi sau mỗi lượt livestream của “HẢO HẢO MUSIC BOX”, chương trình sẽ q...
-              </div>
-              <div class="btn-card">
-                <a href="#" class="btn-xem">Xem thêm</a>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="">
+                    “HẢO HẢO – MUSIC BOX”: NƠI KẾT TRIỆU YÊU THƯƠNG ĐẾN...
+                  </a>
+                </h5>
+                <div class="card-text">
+                  Vào ngày 29 và 30 tháng 03, sau khi nhận được tiền hỗ trợ lên đến 600 triệ...
+                </div>
+                <div class="btn-card">
+                  <a href="./Subpage/Music_box_sp.html" class="btn-xem">Xem thêm</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 bg-card" style="border-radius: 20px;">
-            <div class="img-sukien">
-              <img src="Img/Photo/Home_card1.jpg" class="card-img-top" style="border-radius: 20px 20px 0px 0px;"
-                alt="...">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">
-                <a href="">
-                  “MUSIC BOX”: ÂM NHẠC ĐI XA NỐI YÊU THƯƠNG LẠI GẦN
-                </a>
-              </h5>
-              <div class="card-text">
-                Với chủ đề tình yêu, “Hảo Hảo Music Box” đã khiến hàng triệu trái tim...
+  
+          <div class="col">
+            <div class="card h-100 bg-card" style="border-radius: 20px;">
+              <div class="img-sukien">
+                <img src="Img/Photo/Activity_Card2.jpg" class="card-img-top" style="border-radius: 20px 20px 0px 0px;"
+                  alt="...">
               </div>
-              <div class="btn-card">
-                <a href="./Subpage/Music_box_sp.html" class="btn-xem">Xem thêm</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 bg-card" style="border-radius: 20px;">
-            <div class="img-sukien">
-              <img src="Img/Photo/Home_card2.jpg" class="card-img-top" style="border-radius: 20px 20px 0px 0px;"
-                alt="...">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">
-                <a href="">
-                  HẢO HẢO LÀ ĐƠN VỊ TÀI TRỢ CHÍNH THỨC TẠI GIẢI ĐẤU...
-                </a>
-              </h5>
-              <div class="card-text">
-                Đấu Trường Danh Vọng mùa Xuân 2022 – mùa giải đầu tiên trong năm 2022...
-              </div>
-              <div class="btn-card">
-                <a href="#" class="btn-xem">Xem thêm</a>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="">
+                    “HẢO HẢO – MUSIC BOX”: NƠI KẾT TRIỆU YÊU THƯƠNG ĐẾN...
+                  </a>
+                </h5>
+                <div class="card-text">
+                  Bởi sau mỗi lượt livestream của “HẢO HẢO MUSIC BOX”, chương trình sẽ q...
+                </div>
+                <div class="btn-card">
+                  <a href="#" class="btn-xem">Xem thêm</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 bg-card" style="border-radius: 20px;">
-            <div class="img-sukien">
-              <img src="Img/Photo/Home_card3.jpg" class="card-img-top" style="border-radius: 20px 20px 0px 0px;"
-                alt="...">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">
-                <a href="">
-                  “HẢO HẢO – MUSIC BOX”: TRAO NIỀM HỨNG KHỞI, KẾT TRIỆU...
-                </a>
-              </h5>
-              <div class="card-text">
-                Năm 2021 là một khoảng thời gian cực kỳ khó khăn, sau đại dịch COVID...
+  
+          <div class="col">
+            <div class="card h-100 bg-card" style="border-radius: 20px;">
+              <div class="img-sukien">
+                <img src="Img/Photo/Home_card1.jpg" class="card-img-top" style="border-radius: 20px 20px 0px 0px;"
+                  alt="...">
               </div>
-              <div class="btn-card">
-                <a href="./Subpage/Music_box_sp.html" class="btn-xem">Xem thêm</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 bg-card" style="border-radius: 20px;">
-            <div class="img-sukien">
-              <img src="Img/Photo/Home_card4.jpg" class="card-img-top" style="border-radius: 20px 20px 0px 0px;"
-                alt="...">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">
-                <a href="">
-                  HẢO HẢO – MÌ ĂN LIỀN SỐ 1 TẠI KHU VỰC THÀNH THỊ 2019
-                </a>
-              </h5>
-              <div class="card-text">
-                Hảo Hảo ngày càng khẳng định vị trí của mình trong ngành hàng tiêu dùng nh...
-              </div>
-              <div class="btn-card">
-                <a href="#" class="btn-xem">Xem thêm</a>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="">
+                    “MUSIC BOX”: ÂM NHẠC ĐI XA NỐI YÊU THƯƠNG LẠI GẦN
+                  </a>
+                </h5>
+                <div class="card-text">
+                  Với chủ đề tình yêu, “Hảo Hảo Music Box” đã khiến hàng triệu trái tim...
+                </div>
+                <div class="btn-card">
+                  <a href="./Subpage/Music_box_sp.html" class="btn-xem">Xem thêm</a>
+                </div>
               </div>
             </div>
           </div>
+  
+          <div class="col">
+            <div class="card h-100 bg-card" style="border-radius: 20px;">
+              <div class="img-sukien">
+                <img src="Img/Photo/Home_card2.jpg" class="card-img-top" style="border-radius: 20px 20px 0px 0px;"
+                  alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="">
+                    HẢO HẢO LÀ ĐƠN VỊ TÀI TRỢ CHÍNH THỨC TẠI GIẢI ĐẤU...
+                  </a>
+                </h5>
+                <div class="card-text">
+                  Đấu Trường Danh Vọng mùa Xuân 2022 – mùa giải đầu tiên trong năm 2022...
+                </div>
+                <div class="btn-card">
+                  <a href="#" class="btn-xem">Xem thêm</a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card h-100 bg-card" style="border-radius: 20px;">
+              <div class="img-sukien">
+                <img src="Img/Photo/Home_card3.jpg" class="card-img-top" style="border-radius: 20px 20px 0px 0px;"
+                  alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="">
+                    “HẢO HẢO – MUSIC BOX”: TRAO NIỀM HỨNG KHỞI, KẾT TRIỆU...
+                  </a>
+                </h5>
+                <div class="card-text">
+                  Năm 2021 là một khoảng thời gian cực kỳ khó khăn, sau đại dịch COVID...
+                </div>
+                <div class="btn-card">
+                  <a href="./Subpage/Music_box_sp.html" class="btn-xem">Xem thêm</a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card h-100 bg-card" style="border-radius: 20px;">
+              <div class="img-sukien">
+                <img src="Img/Photo/Home_card4.jpg" class="card-img-top" style="border-radius: 20px 20px 0px 0px;"
+                  alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="">
+                    HẢO HẢO – MÌ ĂN LIỀN SỐ 1 TẠI KHU VỰC THÀNH THỊ 2019
+                  </a>
+                </h5>
+                <div class="card-text">
+                  Hảo Hảo ngày càng khẳng định vị trí của mình trong ngành hàng tiêu dùng nh...
+                </div>
+                <div class="btn-card">
+                  <a href="#" class="btn-xem">Xem thêm</a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
         </div>
-
       </div>
     </div>
+    
   </div>
   <!-- end card tin tuc -->
 
@@ -259,74 +262,117 @@
 
   <!-- PHẦN VIDEO SLIDE -->
   <div class="video-slider">
-
-    <div class="main-player" style="margin: 0px 170px;">
-      <div class="container">
-        <div class="row">
-          <div class="col video-wrapper">
-            <img src="./Img/Photo/tv_top.png" alt="" style="height: 70px; padding-left: 240px;">
-            <div class="video">
-              <iframe class="-z-1" src="https://www.youtube.com/embed/a6YD2fo6ckg?rel=0&amp;autoplay=0&amp;mute=1"
-                frameborder="0"></iframe>
+    <div id="main_play">
+      <div class="main-player" style="margin: 0px 170px;">
+        <div class="container">
+          <div class="row">
+            <div class="col video-wrapper">
+              <img src="./Img/Photo/tv_top.png" alt="" style="height: 70px; margin-left: 240px;">
+              <div class="video">
+                <iframe class="-z-1" src="https://www.youtube.com/embed/a6YD2fo6ckg?rel=0&amp;autoplay=0&amp;mute=1"
+                  frameborder="0"></iframe>
+              </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="info-video" style="padding: 130px 0px;">
-              <h3>
-                TRÚC NHÂN X HẢO HẢO
-                <br>
-                LÀM GÓI ĐỠ THÈM (OFFICIAL MUSIC VIDEO)
-              </h3>
-              <div class="content-text">
-                Tự nhiên thấy đói, xuống làm gói cho đỡ thèm! Nói chứ Nhân mời quí dzị nghía cái MV mới xem có bắt gặp
-                mình trong đó không nhe, chứ chắc chắn là có Nhân rồi đó.
+            <div class="col">
+              <div class="info-video" style="padding: 130px 0px;">
+                <h3>
+                  TRÚC NHÂN X HẢO HẢO
+                  <br>
+                  LÀM GÓI ĐỠ THÈM (OFFICIAL MUSIC VIDEO)
+                </h3>
+                <div class="content-text">
+                  Tự nhiên thấy đói, xuống làm gói cho đỡ thèm! Nói chứ Nhân mời quí dzị nghía cái MV mới xem có bắt gặp
+                  mình trong đó không nhe, chứ chắc chắn là có Nhân rồi đó.
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    
 
     <div class="border-list-video"></div>
-
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner pad-sl">
-        <ul style="display: flex; list-style-type: none;">
-          <li>
-            <div class="bd-slide carousel-item active">
-              <img src="Img/Photo/slide1_Activity.jpg" alt="" width="90%">
+        
+    <!-- Phần list slide video -->
+    <div class="container text-center my-3">
+      <div class="row mx-auto my-auto justify-content-center">
+        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="col-md-3" style="height: 50px;">
+                <div class="card ma-slide">
+                  <div class="card-img"> <img src="Img/Photo/slide1_Activity.jpg" class="img-fluid"> </div>
+                  <div class="card-img-overlay"> <img src="./Img/Photo/play_button.png" alt="" onclick="slide1()"></div>
+                </div>
+              </div>
             </div>
-          </li>
-          <li>
-            <div class="bd-slide carousel-item active">
-              <img src="Img/Photo/slide2_Activity.jpg" alt="" width="90%">
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card ma-slid">
+                  <div class="card-img"> <img src="Img/Photo/slide2_Activity.jpg" class="img-fluid"> </div>
+                  <div class="card-img-overlay"><img src="./Img/Photo/play_button.png" alt="" onclick="slide2()"></div>
+                </div>
+              </div>
             </div>
-          </li>
-          <li>
-            <div class="bd-slide carousel-item active">
-              <img src="Img/Photo/slide3_Activity.jpg" alt="" width="90%">
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card ma-slid">
+                  <div class="card-img"> <img src="Img/Photo/slide3_Activity.jpg" class="img-fluid"> </div>
+                  <div class="card-img-overlay"><img src="./Img/Photo/play_button.png" alt="" onclick="slide3()"></div>
+                </div>
+              </div>
             </div>
-          </li>
-          <li>
-            <div class="bd-slide carousel-item">
-              <img src="Img/Photo/slide4_Activity.jpg" alt="" width="90%">
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card ma-slid">
+                  <div class="card-img"> <img src="Img/Photo/slide4_Activity.jpg" class="img-fluid"> </div>
+                  <div class="card-img-overlay"><img src="./Img/Photo/play_button.png" alt="" onclick="slide4()"></div>
+                </div>
+              </div>
             </div>
-          </li>
-        </ul>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card ma-slid">
+                  <div class="card-img"> <img src="Img/Photo/slide1_Activity.jpg" class="img-fluid"> </div>
+                  <div class="card-img-overlay"><img src="./Img/Photo/play_button.png" alt="" onclick="slide1()"></div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card ma-slid">
+                  <div class="card-img"> <img src="Img/Photo/slide2_Activity.jpg" class="img-fluid"> </div>
+                  <div class="card-img-overlay"><img src="./Img/Photo/play_button.png" alt="" onclick="slide2()"></div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card ma-slid">
+                  <div class="card-img"> <img src="Img/Photo/slide3_Activity.jpg" class="img-fluid"> </div>
+                  <div class="card-img-overlay"><img src="./Img/Photo/play_button.png" alt="" onclick="slide3()"></div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card ma-slid">
+                  <div class="card-img"> <img src="Img/Photo/slide4_Activity.jpg" class="img-fluid"> </div>
+                  <div class="card-img-overlay"><img src="./Img/Photo/play_button.png" alt="" onclick="slide4()"></div>
+                </div>
+              </div>
+          </div> 
+          
+          <a class="carousel-control-prev w-aut bg-button" href="#recipeCarousel" role="button"
+            data-bs-slide="prev" style="width: 35px;"> <span class="carousel-control-prev-icon ic" aria-hidden="true"></span> </a> 
+            <a class="carousel-control-next w-aut bg-button" href="#recipeCarousel" role="button" data-bs-slide="next" style="width: 35px;">
+            <span class="carousel-control-next-icon ic" aria-hidden="true"></span> </a>
+        </div>
       </div>
-      <button class="carousel-control-prev bg-button" type="button" data-bs-target="#carouselExampleControls"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon ic" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next bg-button" type="button" data-bs-target="#carouselExampleControls"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon ic" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
 
-    <div class="border-list-video"></div>
+    <div class="border-list"></div>
   </div>
 
 
@@ -396,13 +442,11 @@
     </div>
   </footer>
 
-
-
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
-
+  <script src="./Js/Activity.js"></script>
 </body>
 
 </html>
