@@ -14,8 +14,8 @@
 <body>
   <nav class="navbar navbar-light navbar-expand-md fw-bold d-lg-flex" style="background: #EE8BAE;">
     <div class="container-fluid">
-      <a href="./index.html">
-        <img src="./Img/Photo/Home_logo_acecook.svg" style="height: 63.8px;margin-left: 15px;">
+      <a href="./index.html" class="blink">
+        <img  src="./Img/Photo/Home_logo_acecook.svg" style="height: 63.8px;margin-left: 15px;">
       </a>
       <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
         <span class="visually-hidden">Toggle navigation</span>
@@ -89,8 +89,8 @@
                 SẮP XẾP
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Năm 2021</a></li>
-                <li><a class="dropdown-item" href="#">Năm 2022</a></li>
+                <li><a class="dropdown-item" href="#" onclick="Nam2021()">Năm 2021</a></li>
+                <li><a class="dropdown-item" href="#" onclick="Nam2022()">Năm 2022</a></li>
               </ul>
             </div>
           </div>
@@ -101,7 +101,29 @@
     <div id="holder">
       <div class="list-grid">
         <div class="row row-cols-1 row-cols-md-3 g-4 card-gap">
-  
+          
+          <div class="col">
+            <div class="card h-100 bg-card" style="border-radius: 20px;">
+              <div class="img-sukien">
+                <img src="Img/Photo/Activity_Card9.jpg" class="card-img-top" style="border-radius: 20px 20px 0px 0px;"
+                  alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="">
+                    “HẢO HẢO – MUSIC BOX”: NƠI KẾT TRIỆU YÊU THƯƠNG ĐẾN...
+                  </a>
+                </h5>
+                <div class="card-text">
+                  Vào ngày 05 và 10 tháng 05, sau khi nhận được tiền hỗ trợ lên đến 600 triệ...
+                </div>
+                <div class="btn-card">
+                  <a href="#" class="btn-xem">Xem thêm</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="col">
             <div class="card h-100 bg-card" style="border-radius: 20px;">
               <div class="img-sukien">
@@ -118,7 +140,7 @@
                   Vào ngày 29 và 30 tháng 03, sau khi nhận được tiền hỗ trợ lên đến 600 triệ...
                 </div>
                 <div class="btn-card">
-                  <a href="./Subpage/Music_box_sp.html" class="btn-xem">Xem thêm</a>
+                  <a href="#" class="btn-xem">Xem thêm</a>
                 </div>
               </div>
             </div>
@@ -212,27 +234,7 @@
             </div>
           </div>
   
-          <div class="col">
-            <div class="card h-100 bg-card" style="border-radius: 20px;">
-              <div class="img-sukien">
-                <img src="Img/Photo/Home_card4.jpg" class="card-img-top" style="border-radius: 20px 20px 0px 0px;"
-                  alt="...">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="">
-                    HẢO HẢO – MÌ ĂN LIỀN SỐ 1 TẠI KHU VỰC THÀNH THỊ 2019
-                  </a>
-                </h5>
-                <div class="card-text">
-                  Hảo Hảo ngày càng khẳng định vị trí của mình trong ngành hàng tiêu dùng nh...
-                </div>
-                <div class="btn-card">
-                  <a href="#" class="btn-xem">Xem thêm</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          
   
         </div>
       </div>
@@ -242,19 +244,19 @@
   <!-- end card tin tuc -->
 
   <!-- Phần số trang -->
-  <div class="number-page ">
+  <div class="number-page " id="numpage">
     <ul class="justify-content-center" style="display: flex; list-style-type: none;">
       <li class="trang1">
         <a href="">1</a>
       </li>
-      <li class="trang2 bd-number">
+      <li class="trang2 bd-number" onclick="Page2()">
         <a href="#">2</a>
       </li>
-      <li class="next bd-number">
-        <a href=""> > </a>
+      <li class="next bd-number" onclick="Page2()">
+        <a href="#"> > </a>
       </li>
-      <li class="trang-cuoi">
-        <a href="">Trang cuối</a>
+      <li class="trang-cuoi" onclick="Page2()">
+        <a href="#">Trang cuối</a>
       </li>
     </ul>
   </div>
@@ -267,7 +269,9 @@
         <div class="container">
           <div class="row">
             <div class="col video-wrapper">
-              <img src="./Img/Photo/tv_top.png" alt="" style="height: 70px; margin-left: 240px;">
+              <div class="tv-top justify-content-center">
+                <img src="./Img/Photo/tv_top.png" alt="" style="height: 70px; margin-left: 240px;">
+              </div>
               <div class="video">
                 <iframe class="-z-1" src="https://www.youtube.com/embed/a6YD2fo6ckg?rel=0&amp;autoplay=0&amp;mute=1"
                   frameborder="0"></iframe>

@@ -19,6 +19,8 @@ nav {
     z-index: 1;
     position: fixed !important;
     width: 100%;
+    --tw-shadow: 0 8px 32px rgba(0, 0, 0, 0.32);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .navbar li:hover a {
@@ -234,6 +236,7 @@ nav {
 }
 .ma-slid {
     margin: 0px 10px;
+    border: none;
 }
 .card-img img{
     border-radius: 1rem;
@@ -247,6 +250,7 @@ nav {
     height: 60px;
     margin-top: 45px;
 }
+
 
 
 /* Phần ảnh của footer */
