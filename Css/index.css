@@ -246,3 +246,7 @@ img.slide-sync {
 img.slide-sync.ref {
     border: 5px solid #ee8bae;
 }
+
+img.slide-sync.ref.noodle {
+    border: none;
+}
