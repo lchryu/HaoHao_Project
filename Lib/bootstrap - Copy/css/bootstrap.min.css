@@ -6835,27 +6835,27 @@ fieldset:disabled .btn {
     color: #212529
 }
 
-.carousel {
+.carousel1111 {
     position: relative
 }
 
-.carousel.pointer-event {
+.carousel11.pointer-event {
     touch-action: pan-y
 }
 
-.carousel-inner {
+.carousel11-inner {
     position: relative;
     width: 100%;
     overflow: hidden
 }
 
-.carousel-inner::after {
+.carousel11-inner::after {
     display: block;
     clear: both;
     content: ""
 }
 
-.carousel-item {
+.carousel11-item {
     position: relative;
     display: none;
     float: left;
@@ -6867,42 +6867,42 @@ fieldset:disabled .btn {
 }
 
 @media (prefers-reduced-motion:reduce) {
-    .carousel-item {
+    .carousel11-item {
         transition: none
     }
 }
 
-.carousel-item-next,
-.carousel-item-prev,
-.carousel-item.active {
+.carousel11-item-next,
+.carousel11-item-prev,
+.carousel11-item.active {
     display: block
 }
 
-.active.carousel-item-end,
-.carousel-item-next:not(.carousel-item-start) {
+.active.carousel11-item-end,
+.carousel11-item-next:not(.carousel11-item-start) {
     transform: translateX(100%)
 }
 
-.active.carousel-item-start,
-.carousel-item-prev:not(.carousel-item-end) {
+.active.carousel11-item-start,
+.carousel11-item-prev:not(.carousel11-item-end) {
     transform: translateX(-100%)
 }
 
-.carousel-fade .carousel-item {
+.carousel11-fade .carousel11-item {
     opacity: 0;
     transition-property: opacity;
     transform: none
 }
 
-.carousel-fade .carousel-item-next.carousel-item-start,
-.carousel-fade .carousel-item-prev.carousel-item-end,
-.carousel-fade .carousel-item.active {
+.carousel11-fade .carousel11-item-next.carousel11-item-start,
+.carousel11-fade .carousel11-item-prev.carousel11-item-end,
+.carousel11-fade .carousel11-item.active {
     z-index: 1;
     opacity: 1
 }
 
-.carousel-fade .active.carousel-item-end,
-.carousel-fade .active.carousel-item-start {
+.carousel11-fade .active.carousel11-item-end,
+.carousel11-fade .active.carousel11-item-start {
     z-index: 0;
     opacity: 0;
     transition: opacity 0s .6s
@@ -6910,14 +6910,14 @@ fieldset:disabled .btn {
 
 @media (prefers-reduced-motion:reduce) {
 
-    .carousel-fade .active.carousel-item-end,
-    .carousel-fade .active.carousel-item-start {
+    .carousel11-fade .active.carousel11-item-end,
+    .carousel11-fade .active.carousel11-item-start {
         transition: none
     }
 }
 
-.carousel-control-next,
-.carousel-control-prev {
+.carousel11-control-next,
+.carousel11-control-prev {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -6937,32 +6937,32 @@ fieldset:disabled .btn {
 
 @media (prefers-reduced-motion:reduce) {
 
-    .carousel-control-next,
-    .carousel-control-prev {
+    .carousel11-control-next,
+    .carousel11-control-prev {
         transition: none
     }
 }
 
-.carousel-control-next:focus,
-.carousel-control-next:hover,
-.carousel-control-prev:focus,
-.carousel-control-prev:hover {
+.carousel11-control-next:focus,
+.carousel11-control-next:hover,
+.carousel11-control-prev:focus,
+.carousel11-control-prev:hover {
     color: #fff;
     text-decoration: none;
     outline: 0;
     opacity: .9
 }
 
-.carousel-control-prev {
+.carousel11-control-prev {
     left: 0
 }
 
-.carousel-control-next {
+.carousel11-control-next {
     right: 0
 }
 
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
+.carousel11-control-next-icon,
+.carousel11-control-prev-icon {
     display: inline-block;
     width: 2rem;
     height: 2rem;
@@ -6971,15 +6971,15 @@ fieldset:disabled .btn {
     background-size: 100% 100%
 }
 
-.carousel-control-prev-icon {
+.carousel11-control-prev-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e")
 }
 
-.carousel-control-next-icon {
+.carousel11-control-next-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
 }
 
-.carousel-indicators {
+.carousel11-indicators {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -6994,7 +6994,7 @@ fieldset:disabled .btn {
     list-style: none
 }
 
-.carousel-indicators [data-bs-target] {
+.carousel11-indicators [data-bs-target] {
     box-sizing: content-box;
     flex: 0 1 auto;
     width: 30px;
@@ -7014,16 +7014,16 @@ fieldset:disabled .btn {
 }
 
 @media (prefers-reduced-motion:reduce) {
-    .carousel-indicators [data-bs-target] {
+    .carousel11-indicators [data-bs-target] {
         transition: none
     }
 }
 
-.carousel-indicators .active {
+.carousel11-indicators .active {
     opacity: 1
 }
 
-.carousel-caption {
+.carousel11-caption {
     position: absolute;
     right: 15%;
     bottom: 1.25rem;
@@ -7034,16 +7034,16 @@ fieldset:disabled .btn {
     text-align: center
 }
 
-.carousel-dark .carousel-control-next-icon,
-.carousel-dark .carousel-control-prev-icon {
+.carousel11-dark .carousel11-control-next-icon,
+.carousel11-dark .carousel11-control-prev-icon {
     filter: invert(1) grayscale(100)
 }
 
-.carousel-dark .carousel-indicators [data-bs-target] {
+.carousel11-dark .carousel11-indicators [data-bs-target] {
     background-color: #000
 }
 
-.carousel-dark .carousel-caption {
+.carousel11-dark .carousel11-caption {
     color: #000
 }
 
