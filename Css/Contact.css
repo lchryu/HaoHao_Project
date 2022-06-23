@@ -6,10 +6,7 @@
 .test {
     height: 1000px;
 }
-nav{
-    --tw-shadow: 0 8px 32px rgba(0, 0, 0, 0.32);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
+
 .navbar li:hover a {
     background-color: #e96593;
     padding: 100px 0px;
@@ -31,6 +28,29 @@ nav{
     border-radius: 22px;
     padding: 10px 0px;
 }
+/* .container1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} */
+.upfile{
+    font-size: 15px;
+    background: white;
+    border-radius: 22px;
+    outline: none;
+    border: 2px solid var(--bs-pink);
+    width: 100%;
+}
+
+::-webkit-file-upload-button{
+    color: white;
+    background: #ea6060;
+    border-radius: 22px;
+    border: red !important;
+    padding: 10px;
+    margin: 5px;
+}
 /* Phần footer */
 footer{
     background-color: rgba(244, 244, 244);
@@ -50,3 +70,24 @@ footer{
     font-size: 16px;
 }
 
+.errMes {
+    position: absolute;
+    color: rgb(221, 50, 50);
+    font-size: 14px;
+    display: block;
+    right: 10px;
+    top: 25%;
+}
+
+#errContent {
+    top:10px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.input-content {
+    min-height: 140px;
+    overflow: hidden;
+}
