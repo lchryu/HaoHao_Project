@@ -1,3 +1,3 @@
-function test(){
-    console.log('test');
+function Contact() {
+    alert('Thông tin của bạn đã được ghi lại');
 }
