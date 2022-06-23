@@ -103,7 +103,9 @@
                   Để lại thông tin để nhận được những phần quà ý nghĩa đến từ Hảo Hảo
                 </div>
                 <div class="btn-dangki-thongtin" style="margin-top: 30px;">
-                  <a href="#" class="btn-dangki">ĐĂNG KÍ THÔNG TIN</a>
+                  <button class="place-buy-btn js-buy-ticket" style="margin-left: 10px;"><a href="#"
+                      class="btn-dangki">ĐĂNG KÍ THÔNG TIN</a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -129,7 +131,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="col-md-3" >
+              <div class="col-md-3">
                 <div class="card ma-slid">
                   <div class="card-img"> <img src="Img/Photo/anmihaohao.jpg" class="img-fluid"> </div>
                 </div>
@@ -150,7 +152,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="col-md-3" >
+              <div class="col-md-3">
                 <div class="card ma-slid">
                   <div class="card-img"> <img src="Img/Photo/anmihaohao.jpg" class="img-fluid"> </div>
                 </div>
@@ -504,6 +506,54 @@
   </footer>
 
   <!-- end footer -->
+
+
+  <!-- form đăng ký -->
+  <div class="modal js-modal">
+    <div class="modal-container js-modal-container">
+      <div class="modal-close js-modal-close">
+        <i class="ti-close">
+
+        </i>
+      </div>
+      <header class="modal-header">
+        Đăng ký thông tin
+      </header>
+      <div class="modal-body">
+        <input id='RegName' type="text" class="modal-input" placeholder="Họ tên*">
+        <input id="RegAge" type="" class="modal-input" placeholder="Tuổi*">
+        <!-- <input type="ticket-email" class="modal-input" placeholder="Giới tính*"> -->
+        <div class="mb-3">
+          <select id="RegSex" class="form-select modal-input" aria-label="Default select example"
+            style="padding-left:10px;">
+            <option value="" disabled selected>Chọn giới tính*</option>
+            <option value="nam">Nam</option>
+            <option value="nu">Nữ</option>
+          </select>
+        </div>
+        <input id="RegAdd" type="" class="modal-input" placeholder="Chọn khu vực*">
+
+        <div class="mb-3" style="list-style:none;display: flex">
+          <input id="RegEmail" type="email" style="margin-right: 10px;" class="form-control modal-input"
+            placeholder="Email *">
+          <input id="RegNum" type="text" class="form-control modal-input" placeholder="Số điện thoại * ">
+        </div>
+
+      </div>
+
+      <button id="buy-tickets" onclick="RegisterMusicBox()">
+        Gửi
+      </button>
+      <footer class="modal-footer">
+        <p class="modal-help">
+
+        </p>
+      </footer>
+    </div>
+
+  </div>
+
+  <!-- kết thúc formd dăngd ky -->
 
 
   <!-- begin link slide sync -->

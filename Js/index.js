@@ -15,3 +15,75 @@ items.forEach((el) => {
     }
 })
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// form đăng ký thông tin
+const buyBtns = document.querySelectorAll('.js-buy-ticket');
+const modal = document.querySelector('.js-modal');
+const modalContainer = document.querySelector('.js-modal-container');
+const modalClose = document.querySelector('.js-modal-close');
+
+for (const buyBtn of buyBtns) {
+    buyBtn.addEventListener('click', () => {
+        modal.classList.add('open');
+    });
+}
+
+
+modalClose.addEventListener('click', () => {
+    modal.classList.remove('open');
+});
+
+
+// ấn ra ngoài container thì đóng modal (*)
+modal.addEventListener('click', () => {
+    modal.classList.remove('open');
+})
+
+// ngăn chặn nổi bọt của bước (*)
+modalContainer.addEventListener('click', (event) => {
+    event.stopPropagation();
+})
+
+
+
+
+
+
+function RegisterMusicBox(){
+    alert("Thông tin của bạn đã được ghi lại!")
+}
