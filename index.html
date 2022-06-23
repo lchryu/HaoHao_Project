@@ -76,8 +76,8 @@
   <!-- end slide -->
 
 
-  <!-- PHẦN VIDEO SLIDE -->
-  <div class="video-slider" style="padding-top: 50px;">
+   <!-- PHẦN VIDEO SLIDE -->
+   <div class="video-slider" style="padding-top: 50px;">
     <div id="main_play">
       <div class="main-player" style="margin: 0px 170px;">
         <div class="container">
@@ -101,9 +101,9 @@
                   Để lại thông tin để nhận được những phần quà ý nghĩa đến từ Hảo Hảo
                 </div>
                 <div class="btn-dangki-thongtin" style="margin-top: 30px;">
-                  <button class="place-buy-btn js-buy-ticket" style="margin-left: 10px;"><a href="#"
-                      class="btn-dangki">ĐĂNG KÍ THÔNG TIN</a>
-                  </button>
+                  <button class="place-buy-btn js-buy-ticket" style="margin-left: 10px;">
+                    ĐĂNG KÍ THÔNG TIN
+                </button>
                 </div>
               </div>
             </div>
@@ -124,42 +124,42 @@
             <div class="carousel-item active">
               <div class="col-md-3">
                 <div class="card ma-slid">
-                  <div class="card-img"> <img src="Img/Photo/Home_card3.jpg" class="img-fluid"> </div>
+                  <div class="card-img"> <img src="Img/Photo/Home_card3.jpg" class="img-fluid" onclick="slide1()"> </div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="col-md-3">
                 <div class="card ma-slid">
-                  <div class="card-img"> <img src="Img/Photo/anmihaohao.jpg" class="img-fluid"> </div>
+                  <div class="card-img"> <img src="Img/Photo/anmihaohao.jpg" class="img-fluid" onclick="slide2()"> </div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="col-md-3">
                 <div class="card ma-slid">
-                  <div class="card-img"> <img src="Img/Photo/Card1_promotion.jpg" class="img-fluid"> </div>
+                  <div class="card-img"> <img src="Img/Photo/Card1_promotion.jpg" class="img-fluid" onclick="slide3()"> </div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="col-md-3">
                 <div class="card ma-slid">
-                  <div class="card-img"> <img src="Img/Photo/Home_card3.jpg" class="img-fluid"> </div>
+                  <div class="card-img"> <img src="Img/Photo/Home_card3.jpg" class="img-fluid" onclick="slide1()"> </div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="col-md-3">
                 <div class="card ma-slid">
-                  <div class="card-img"> <img src="Img/Photo/anmihaohao.jpg" class="img-fluid"> </div>
+                  <div class="card-img"> <img src="Img/Photo/anmihaohao.jpg" class="img-fluid" onclick="slide2()"> </div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="col-md-3">
                 <div class="card ma-slid">
-                  <div class="card-img"> <img src="Img/Photo/Card1_promotion.jpg" class="img-fluid"> </div>
+                  <div class="card-img"> <img src="Img/Photo/Card1_promotion.jpg" class="img-fluid" onclick="slide3()"> </div>
                 </div>
               </div>
             </div>
@@ -334,9 +334,9 @@
     </div>
   </div>
 
-  <!-- PHẦN VIDEO SLIDE SAN Pham -->
-  <div class="video-slider" style="padding-top: 50px;">
-    <div id="main_play">
+   <!-- PHẦN VIDEO SLIDE SAN Pham -->
+   <div class="video-slider" style="padding: 50px 0px;">
+    <div id="haohao_play">
       <div class="main-player" style="margin: 0px 170px;">
         <div class="container">
           <div class="row">
@@ -345,15 +345,15 @@
                 <h3>
                   HẢO HẢO TÔM CHUA CAY
                 </h3>
-                <div class="content-text">
+                <div class="content-text" id="info_product">
                   Được sản xuất theo đúng tiêu chuẩn, công nghệ Nhật Bản, với sự điều hành, hỗ trợ và giám sát liên tục,
                   tỉ mỉ của chính nguồn nhân lực Nhật Bản cùng đội ngũ nhân sự người Việt được đào tạo bài bản tại
                   Acecook chính là “bảo chứng” cho chất lượng của mỗi gói mì Hảo Hảo trước khi được tung ra thị trường.
                   Đây cũng chính là tôn chỉ giúp thương hiệu mì Hảo Hảo luôn là sự lựa chọn an toàn, chất lượng và phù
                   hợp với người tiêu dùng Việt ngay từ khi mới “ra mắt” thị trường vào năm 2000.
                 </div>
-                <div class="btn-card">
-                  <a href="#" class="btn-xem">Chi tiết</a>
+                <div class="btn-dangki-thongtin" style="margin-top: 30px;" id="btn-product">
+                  <a href="#" class="btn-dangki">Chi tiết</a>
                 </div>
               </div>
             </div>
@@ -378,7 +378,7 @@
             <div class="carousel-item active">
               <div class="col-md-3">
                 <div class="card ma-slid">
-                  <div class="card-img"> <img src="Img/Photo/Home-hao-hao-tom-chua-cay-acecook.jpg" class="img-fluid">
+                  <div class="card-img"> <img src="Img/Photo/Home-hao-hao-tom-chua-cay-acecook.jpg" class="img-fluid" onclick="HH_chua_cay()">
                   </div>
                 </div>
               </div>
@@ -386,7 +386,7 @@
             <div class="carousel-item">
               <div class="col-md-3">
                 <div class="card ma-slid">
-                  <div class="card-img"> <img src="Img/Photo/Home-hao-hao-sa-te-hanh-tim-acecook.jpg" class="img-fluid">
+                  <div class="card-img"> <img src="Img/Photo/Home-hao-hao-sa-te-hanh-tim-acecook.jpg" class="img-fluid" onclick="HH_sa_te()">
                   </div>
                 </div>
               </div>
@@ -395,7 +395,7 @@
               <div class="col-md-3">
                 <div class="card ma-slid">
                   <div class="card-img"> <img src="Img/Photo/Home-hao-hao-suon-heo-toi-phi-acecook.jpg"
-                      class="img-fluid"> </div>
+                      class="img-fluid" onclick="HH_suon_heo()"> </div>
                 </div>
               </div>
             </div>
@@ -403,14 +403,14 @@
               <div class="col-md-3">
                 <div class="card ma-slid">
                   <div class="card-img"> <img src="Img/Photo/Home-hao-hao-mi-xao-tom-hanh-acecook.jpg"
-                      class="img-fluid"> </div>
+                      class="img-fluid" onclick="HH_mi_xao()"> </div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="col-md-3">
                 <div class="card ma-slid">
-                  <div class="card-img"> <img src="Img/Photo/Home-hao-hao-tom-chua-cay-acecook.jpg" class="img-fluid">
+                  <div class="card-img"> <img src="Img/Photo/hao-hao-mi-chay-huong-rau-nam-acecook.jpg" class="img-fluid" onclick="HH_mi_chay()">
                   </div>
                 </div>
               </div>
@@ -418,7 +418,7 @@
             <div class="carousel-item">
               <div class="col-md-3">
                 <div class="card ma-slid">
-                  <div class="card-img"> <img src="Img/Photo/Home-hao-hao-sa-te-hanh-tim-acecook.jpg" class="img-fluid">
+                  <div class="card-img"> <img src="Img/Photo/hao-hao-ga-vang-acecook.jpg" class="img-fluid" onclick="HH_ga_vang()">
                   </div>
                 </div>
               </div>
@@ -426,7 +426,7 @@
             <div class="carousel-item">
               <div class="col-md-3">
                 <div class="card ma-slid">
-                  <div class="card-img"> <img src="Img/Photo/Home-hao-hao-tom-chua-cay-acecook.jpg" class="img-fluid">
+                  <div class="card-img"> <img src="Img/Photo/Home-hao-hao-suon-heo-toi-phi-acecook.jpg" class="img-fluid" onclick="HH_suon_heo()">
                   </div>
                 </div>
               </div>
@@ -434,7 +434,7 @@
             <div class="carousel-item">
               <div class="col-md-3">
                 <div class="card ma-slid">
-                  <div class="card-img"> <img src="Img/Photo/Home-hao-hao-tom-chua-cay-acecook.jpg" class="img-fluid">
+                  <div class="card-img"> <img src="Img/Photo/Home-hao-hao-mi-xao-tom-hanh-acecook.jpg" class="img-fluid" onclick="HH_mi_xao()">
                   </div>
                 </div>
               </div>

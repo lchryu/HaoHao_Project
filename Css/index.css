@@ -263,6 +263,20 @@ footer {
 
 
 
+button.place-buy-btn.js-buy-ticket {
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    border: 1px solid red;
+    background-color: #EF0016;
+}
+button.place-buy-btn.js-buy-ticket:hover{
+    background-color: white;
+    color: #EF0016;
+}
+
+
+
 
 
 
