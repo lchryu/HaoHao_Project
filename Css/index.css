@@ -25,7 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 28px;
     padding-top: 24px;
     padding-bottom: 20px;
 }
@@ -144,109 +144,146 @@ footer {
 /* end */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* style slick sync */
-
-
-
-/*
-   * Slick Theme
-   * ************************************************************
-   */
-/* Slider */
-.slick-loading .slick-list {
-    background: #fff url("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/ajax-loader.gif") center center no-repeat;
+/* 23/06/2022 Phần slide video */
+.video img {
+    border-radius: 1rem;
+    height: 300px;
+    width: 100%;
+    border: 1px solid rgba(238, 139, 174);
+    border-width: 4px;
+    padding: 5px 8px;
+}
+.info-video h3 {
+    font-size: 20px;
+    color: rgba(239, 0, 22);
+    line-height: 1.4;
+    font-weight: 700;
+}
+.content-text {
+    line-height: 1.5;
+    font-size: 18px;
+    color: rgba(108, 108, 108);
+    padding-right: 50px;
+}
+.btn-dangki-thongtin a {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 40px;
+}
+.btn-dangki {
+    border: 3px solid #EF0016;
+    text-decoration: none;
+    background-color: #EF0016;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 0.5rem;
+}
+.btn-dangki:hover {
+    background-color: white;
+    color: #EF0016;
 }
 
-/* Icons */
-@font-face {
-    font-family: "slick";
-    src: url("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/fonts/slick.eot");
-    src: url("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/fonts/slick.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/fonts/slick.woff") format("woff"), url("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/fonts/slick.ttf") format("truetype"), url("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/fonts/slick.svg#slick") format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
+.border-list-video {
+    height: 5px;
+    background-color: rgba(238, 139, 174);
+    margin: 0px 170px;
 
-/* ************************************************************* */
-.js .cSlider--single>div:nth-child(1n+2) {
-    display: none;
-}
-
-.js .cSlider--single.slick-initialized>div:nth-child(1n+2) {
-    display: block;
-}
-
-img.slide-sync {
-    position: relative;
-    font-size: 2.25rem;
-    background-color: #f0f0f0;
-    color: #3498db;
-    text-align: center;
-    padding: 2%;
-    margin: 0.5rem;
-}
-
-.cSlider--single img.slide-sync {
-    line-height: 10rem;
-}
-
-.cSlider--nav img.slide-sync::before {
-    content: "";
-    display: block;
-    padding-top: 75%;
-}
-
-.slick-slide.is-active img.slide-sync {
-    color: #c00;
-    background-color: #fff;
-}
-
-.cSlider--nav .slick-slide {
-    cursor: pointer;
-}
-
-.cSlider--nav span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-img.slide-sync {
-    display: inline-block;
 }
 
 
 
+/* Phần sửa list slide video*/
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item>div {
+        display: none
+    }
 
-/* border  */
-img.slide-sync.ref {
-    border: 5px solid #ee8bae;
+    .carousel-inner .carousel-item>div:first-child {
+        display: block
+    }
 }
 
-img.slide-sync.ref.noodle {
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex
+}
+
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%)
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%)
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0)
+}
+.ma-slid {
+    margin: 0px 10px;
     border: none;
 }
+.card-img img{
+    border-radius: 1rem;
+}
+.bg-button .ic{
+    background-color: rgb(80, 76, 76);
+    border-radius: 50px;
+}
+
+
+
+/* SAN PHAM */
+.img-product img {
+    
+    height: 400px;
+    width: 100%; 
+}
+
+ /* your CSS goes here*/
+.items{
+  width:90%;
+  margin:0px auto;
+  margin-top: 100px;
+}
+.slick-slide{
+  margin:10px;
+}
+.slick-slide img{
+  width:100%;
+  border: 0px solid #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

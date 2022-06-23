@@ -194,11 +194,7 @@ nav {
 
 }
 
-.border-list{
-    height: 5px;
-    background-color: rgba(238, 139, 174);
-    margin: 50px 60px;
-}
+
 
 /* Phần sửa list slide video*/
 @media (max-width: 767px) {

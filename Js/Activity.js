@@ -1,12 +1,6 @@
-function displayAction() {
-    let holder = document.getElementById('holder')
-    document.getElementById("numpage").style.display = "none"
-    holder.innerHTML =
-        "<div class='list-grid'><div class='row row-cols-1 row-cols-md-3 g-4 card-gap'><div class='col'><div class='card h-100 bg-card' style='border-radius: 20px;'><div class='img-sukien'><img src='Img/Photo/Activity_Card7.jpg' class='card-img-top' style='border-radius: 20px 20px 0px 0px;'></div><div class='card-body'><h5 class='card-title'><a href='#'>HẢO HẢO VÀ HÀNH TRÌNH 20 NĂM CHIA SẺ HƯƠNG VỊ YÊU...</a></h5><div class='card-text'>Công ty CP Acecook Việt Nam kỷ niệm 20 năm sự ra đời và có mặt trên thị...</div><div class='btn-card'><a href=''./Subpage/Music_box_sp.html' class='btn-xem'>Xem thêm</a></div></div></div></div> <div class='col'><div class='card h-100 bg-card' style='border-radius: 20px;'><div class='img-sukien'><img src='Img/Photo/Activity_Card8.jpg' class='card-img-top' style='border-radius: 20px 20px 0px 0px;'></div><div class='card-body'><h5 class='card-title'><a href='#'>HẢO HẢO VÀ HÀNH TRÌNH 20 NĂM CHIA SẺ HƯƠNG VỊ YÊU...</a></h5><div class='card-text'>Ngày 16-9-2020, tại thành phố Hồ Chí Minh, Công ty cổ phần Acecook Việ...</div><div class='btn-card'><a href=''./Subpage/Music_box_sp.html' class='btn-xem'>Xem thêm</a></div></div></div></div> </div>"
-}
-
 function displayEvent() {
     let holder = document.getElementById('holder')
+    document.getElementById("numpage").style.display = "block"
     holder.innerHTML =
       "<div div class='list-grid' > <div class='row row-cols-1 row-cols-md-3 g-4 card-gap'>\r\
       <div class='col'><div class='card h-100 bg-card' style='border-radius: 20px;'><div class='img-sukien'><img src='Img/Photo/Activity_Card9.jpg' class='card-img-top' style='border-radius: 20px 20px 0px 0px;'></div><div class='card-body'><h5 class='card-title'><a href='#'>“HẢO HẢO – MUSIC BOX”: NƠI KẾT TRIỆU YÊU THƯƠNG ĐẾN...</a></h5 ><div class='card-text'>Vào ngày 05 và 10 tháng 05, sau khi nhận được tiền hỗ trợ lên đến 600 triệ...</div><div class='btn-card'><a href='#' class='btn-xem'>Xem thêm</a></div></div ></div ></div >\r\
@@ -16,6 +10,13 @@ function displayEvent() {
     <div class='col'><div class='card h-100 bg-card' style='border-radius: 20px;'><div class='img-sukien'><img src='Img/Photo/Home_card2.jpg' class='card-img-top' style='border-radius: 20px 20px 0px 0px;'></div><div class='card-body'><h5 class='card-title'><a href='#'>HẢO HẢO LÀ ĐƠN VỊ TÀI TRỢ CHÍNH THỨC TẠI GIẢI ĐẤU...</a></h5><div class='card-text'>Đấu Trường Danh Vọng mùa Xuân 2022 – mùa giải đầu tiên trong năm 2022...</div><div class='btn-card'><a href='#' class='btn-xem'>Xem thêm</a></div></div></div></div>\r\
     <div class='col'><div class='card h-100 bg-card' style='border-radius: 20px;'><div class='img-sukien'><img src='Img/Photo/Home_card3.jpg' class='card-img-top' style='border-radius: 20px 20px 0px 0px;'></div><div class='card-body'><h5 class='card-title'><a href='#'>“HẢO HẢO – MUSIC BOX”: TRAO NIỀM HỨNG KHỞI, KẾT TRIỆU...</a></h5><div class='card-text'>Năm 2021 là một khoảng thời gian cực kỳ khó khăn, sau đại dịch COVID...</div><div class='btn-card'><a href='#' class='btn-xem'>Xem thêm</a></div></div></div></div>\r\
     </div > </div > "
+}
+
+function displayAction() {
+    let holder = document.getElementById('holder')
+    document.getElementById("numpage").style.display = "none"
+    holder.innerHTML =
+        "<div class='list-grid'><div class='row row-cols-1 row-cols-md-3 g-4 card-gap'><div class='col'><div class='card h-100 bg-card' style='border-radius: 20px;'><div class='img-sukien'><img src='Img/Photo/Activity_Card7.jpg' class='card-img-top' style='border-radius: 20px 20px 0px 0px;'></div><div class='card-body'><h5 class='card-title'><a href='#'>HẢO HẢO VÀ HÀNH TRÌNH 20 NĂM CHIA SẺ HƯƠNG VỊ YÊU...</a></h5><div class='card-text'>Công ty CP Acecook Việt Nam kỷ niệm 20 năm sự ra đời và có mặt trên thị...</div><div class='btn-card'><a href=''./Subpage/Music_box_sp.html' class='btn-xem'>Xem thêm</a></div></div></div></div> <div class='col'><div class='card h-100 bg-card' style='border-radius: 20px;'><div class='img-sukien'><img src='Img/Photo/Activity_Card8.jpg' class='card-img-top' style='border-radius: 20px 20px 0px 0px;'></div><div class='card-body'><h5 class='card-title'><a href='#'>HẢO HẢO VÀ HÀNH TRÌNH 20 NĂM CHIA SẺ HƯƠNG VỊ YÊU...</a></h5><div class='card-text'>Ngày 16-9-2020, tại thành phố Hồ Chí Minh, Công ty cổ phần Acecook Việ...</div><div class='btn-card'><a href=''./Subpage/Music_box_sp.html' class='btn-xem'>Xem thêm</a></div></div></div></div> </div>"
 }
 
 function Nam2022() {
@@ -83,6 +84,12 @@ function slide4() {
     let main_play = document.getElementById('main_play')
     main_play.innerHTML =
     "<div class='main-player' style='margin: 0px 170px;'><div class='container'><div class='row'><div class='col video-wrapper'><img src='./Img/Photo/tv_top.png' alt='' style='height: 70px; padding-left: 240px;'><div class='video'><iframe class='-z-1' src='https://www.youtube.com/embed/OtpFw8nTVe4?rel=0&amp;autoplay=0&amp;mute=1'frameborder='0'></iframe></div></div><div class='col'><div class='info-video' style='padding: 130px 0px;'><h3>HẢO HẢO SA TẾ HÀNH TÍM – VỊ NGON BẮT TRỌN MỌI GIÁC QUAN</h3><div class='content-text'>Thử ngay mì Hảo Hảo vị Sa tế hành tím đậm đà tuyệt hảo, vị ngon khó cưỡng, chỉ cần mắt thấy đã u mê chữ ê kéo dàiii, tai nghe tiếng rót nước pha mì đã thèm up thèm down!!! Chần chờ gì mà không để Vị ngon bắt trọn mọi giác quan cùng siêu phẩm Hảo Hảo Sa tế Hành Tím Nghe thôi đã thấy hay, thử sẽ thấy mê ngay!A</div></div></div></div></div></div>"
+}
+
+function slide5() {
+    let main_play = document.getElementById('main_play')
+    main_play.innerHTML =
+    "<div class='main-player' style='margin: 0px 170px;'><div class='container'><div class='row'><div class='col video-wrapper'><img src='./Img/Photo/tv_top.png' alt='' style='height: 70px; padding-left: 240px;'><div class='video'><iframe class='-z-1' src='https://www.youtube.com/embed/lHbvBnbIP-E?rel=0&amp;autoplay=0&amp;mute=1'frameborder='0'></iframe></div></div><div class='col'><div class='info-video' style='padding: 130px 0px;'><h3>HẢO HẢO LẨU KIM CHI HÀN QUỐC – CHUA CAY XUẤT CHÚNG, NGON BÙNG GIÁC QUAN</h3><div class='content-text'>Rúng động với hội thực thần với Hảo Hảo Kim Chi mới! Đậm đà vị quen nhưng vẫn độc đáo ấn tượng, “tân binh” nhà Hảo Hảo liệu có làm nên cơn sốt lần nữa? Ghiền mì thèm kim chi, Hảo Hảo Lẩu Kim Chi Hàn Quốc đích thị dành cho bạn với hương vị chua cay xuất chúng, ngon bùng giác quan!</div></div></div></div></div></div>"
 }
 
 let items = document.querySelectorAll('.carousel .carousel-item')

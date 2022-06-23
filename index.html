@@ -8,28 +8,6 @@
   <link rel="stylesheet" href="./Lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./Css/index.css">
   <link rel="icon" href="./Img/logo_acecook.svg">
-
-
-  <!-- begin link slide sync -->
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-float.min.css'>
-  <link rel='stylesheet'
-    href='https://cdn.jsdelivr.net/combine/npm/slick-carousel@1.7.1/slick/slick.css,npm/slick-carousel@1.7.1/slick/slick-theme.css'>
-  <link rel="stylesheet" href="./Css/SlickSync.css">
-  <!-- end link slide sync -->
-  <style>
-    .cSlider--single-title {
-      font-size: 15px;
-    }
-
-    .cSlider--single-desc {
-      font-size: 11px;
-    }
-
-    .cSlider.cSlider--nav.slick-initialized.slick-slider {
-      border-top: 5px solid #e96593;
-      border-bottom: 5px solid #e96593;
-    }
-  </style>
 </head>
 
 <body>
@@ -100,47 +78,105 @@
   <!-- end slide -->
 
 
-  <!-- begin slide sync -->
-
-  <!-- end slide sync -->
-
-  <div class="container-fluid">
-    <div class="row">
-      <div class="column small-11 small-centered">
-        <div class="cSlider cSlider--single">
-          <div class="cSlider__item "><img class="slide-sync ref col-6"
-              src="https://www.mihaohao.vn/wp-content/uploads/2021/12/800dangky.jpg" alt="">
-            <div class="row" style="display: inline-block;">
-              <h1 class="cSlider--single-title">CHƯƠNG TRÌNH KHUYẾN MẠI – ĂN MÌ HẢO HẢO VI VU CÙNG SAO</h1>
-              <h2 class="cSlider--single-desc">Bấm vào “xem thêm” để cùng tìm hiểu chương trình khuyến mại “Ăn Mì Hảo
-                Hảo Vi Vu Cùng Sao” nhé!</h2>
-              <a href="./Subpage/Music_box_sp.html" class="btn-xem" style="margin-left: 10px;">Đăng ký</a>
+  <!-- PHẦN VIDEO SLIDE -->
+  <div class="video-slider" style="padding-top: 50px;">
+    <div id="main_play">
+      <div class="main-player" style="margin: 0px 170px;">
+        <div class="container">
+          <div class="row">
+            <div class="col video-wrapper">
+              <div class="tv-top justify-content-center">
+                <img src="./Img/Photo/tv_top.png" alt="" style="height: 70px; margin-left: 240px;">
+              </div>
+              <div class="video">
+                <img src="Img/Photo/Home_card3.jpg" alt="">
+              </div>
             </div>
-          </div>
-
-          <div class="cSlider__item"><img class="slide-sync ref col-6"
-              src="https://www.mihaohao.vn/wp-content/uploads/2022/05/KV_800_450_5_5.jpg" alt=""></div>
-
-
-          <div class="cSlider__item"><img class="slide-sync ref col-6"
-              src="https://www.mihaohao.vn/wp-content/uploads/2022/05/banner_12_5.jpg" alt="">
-          </div>
-        </div>
-
-        <div class="cSlider cSlider--nav">
-          <div class="cSlider__item col-lg-12"><img class="slide-sync"
-              src="https://www.mihaohao.vn/wp-content/uploads/2021/12/800dangky.jpg" alt="">
-          </div>
-          <div class="cSlider__item"><img class="slide-sync"
-              src="https://www.mihaohao.vn/wp-content/uploads/2022/05/KV_800_450_5_5.jpg" alt=""></div>
-          <div class="cSlider__item"><img class="slide-sync"
-              src="https://www.mihaohao.vn/wp-content/uploads/2022/05/banner_12_5.jpg" alt="">
+            <div class="col">
+              <div class="info-video" style="padding: 130px 0px;">
+                <h3>
+                  HAO HAO MUSIC BOX - TRAO NIỀM HỨNG KHỞI,
+                  <br>
+                  KẾT TRIỆU YÊU THƯƠNG
+                </h3>
+                <div class="content-text">
+                  Để lại thông tin để nhận được những phần quà ý nghĩa đến từ Hảo Hảo
+                </div>
+                <div class="btn-dangki-thongtin" style="margin-top: 30px;">
+                  <a href="#" class="btn-dangki">ĐĂNG KÍ THÔNG TIN</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
+
+    <div class="border-list-video"></div>
+
+    <!-- Phần list slide video -->
+    <div class="container text-center my-3" style="padding: 0px 70px ;">
+      <div class="row mx-auto my-auto justify-content-center">
+        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+
+            <div class="carousel-item active">
+              <div class="col-md-3">
+                <div class="card ma-slid">
+                  <div class="card-img"> <img src="Img/Photo/Home_card3.jpg" class="img-fluid"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3" >
+                <div class="card ma-slid">
+                  <div class="card-img"> <img src="Img/Photo/anmihaohao.jpg" class="img-fluid"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card ma-slid">
+                  <div class="card-img"> <img src="Img/Photo/Card1_promotion.jpg" class="img-fluid"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card ma-slid">
+                  <div class="card-img"> <img src="Img/Photo/Home_card3.jpg" class="img-fluid"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3" >
+                <div class="card ma-slid">
+                  <div class="card-img"> <img src="Img/Photo/anmihaohao.jpg" class="img-fluid"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card ma-slid">
+                  <div class="card-img"> <img src="Img/Photo/Card1_promotion.jpg" class="img-fluid"> </div>
+                </div>
+              </div>
+            </div>
+
+            <a class="carousel-control-prev w-aut bg-button" href="#recipeCarousel" role="button" data-bs-slide="prev"
+              style="width: 35px;"> <span class="carousel-control-prev-icon ic" aria-hidden="true"></span> </a>
+            <a class="carousel-control-next w-aut bg-button" href="#recipeCarousel" role="button" data-bs-slide="next"
+              style="width: 35px;">
+              <span class="carousel-control-next-icon ic" aria-hidden="true"></span> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-list-video"></div>
+
+  </div>
 
 
 
@@ -298,59 +334,130 @@
     </div>
   </div>
 
-  <div class="container product">
-    <div class="info-product"></div>
-    <div class="list-product"></div>
+  <!-- PHẦN VIDEO SLIDE SAN Pham -->
+  <div class="video-slider" style="padding-top: 50px;">
+    <div id="main_play">
+      <div class="main-player" style="margin: 0px 170px;">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="info-video" style="padding: 30px 0px;">
+                <h3>
+                  HẢO HẢO TÔM CHUA CAY
+                </h3>
+                <div class="content-text">
+                  Được sản xuất theo đúng tiêu chuẩn, công nghệ Nhật Bản, với sự điều hành, hỗ trợ và giám sát liên tục,
+                  tỉ mỉ của chính nguồn nhân lực Nhật Bản cùng đội ngũ nhân sự người Việt được đào tạo bài bản tại
+                  Acecook chính là “bảo chứng” cho chất lượng của mỗi gói mì Hảo Hảo trước khi được tung ra thị trường.
+                  Đây cũng chính là tôn chỉ giúp thương hiệu mì Hảo Hảo luôn là sự lựa chọn an toàn, chất lượng và phù
+                  hợp với người tiêu dùng Việt ngay từ khi mới “ra mắt” thị trường vào năm 2000.
+                </div>
+                <div class="btn-card">
+                  <a href="#" class="btn-xem">Chi tiết</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col video-wrapper">
+              <div class="img-product">
+                <img src="Img/Photo/Home-hao-hao-tom-chua-cay-acecook.jpg" alt="">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phần list slide video -->
+    <div class="container text-center my-3" style="padding: 0px 70px ;">
+      <div class="row mx-auto my-auto justify-content-center">
+        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+
+            <div class="carousel-item active">
+              <div class="col-md-3">
+                <div class="card ma-slid">
+                  <div class="card-img"> <img src="Img/Photo/Home-hao-hao-tom-chua-cay-acecook.jpg" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card ma-slid">
+                  <div class="card-img"> <img src="Img/Photo/Home-hao-hao-sa-te-hanh-tim-acecook.jpg" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card ma-slid">
+                  <div class="card-img"> <img src="Img/Photo/Home-hao-hao-suon-heo-toi-phi-acecook.jpg"
+                      class="img-fluid"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card ma-slid">
+                  <div class="card-img"> <img src="Img/Photo/Home-hao-hao-mi-xao-tom-hanh-acecook.jpg"
+                      class="img-fluid"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card ma-slid">
+                  <div class="card-img"> <img src="Img/Photo/Home-hao-hao-tom-chua-cay-acecook.jpg" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card ma-slid">
+                  <div class="card-img"> <img src="Img/Photo/Home-hao-hao-sa-te-hanh-tim-acecook.jpg" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card ma-slid">
+                  <div class="card-img"> <img src="Img/Photo/Home-hao-hao-tom-chua-cay-acecook.jpg" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card ma-slid">
+                  <div class="card-img"> <img src="Img/Photo/Home-hao-hao-tom-chua-cay-acecook.jpg" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a class="carousel-control-prev w-aut bg-button" href="#recipeCarousel" role="button" data-bs-slide="prev"
+              style="width: 35px;"> <span class="carousel-control-prev-icon ic" aria-hidden="true"></span> </a>
+            <a class="carousel-control-next w-aut bg-button" href="#recipeCarousel" role="button" data-bs-slide="next"
+              style="width: 35px;">
+              <span class="carousel-control-next-icon ic" aria-hidden="true"></span> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
   </div>
   <!-- end card san pham -->
 
 
 
-  <!-- begin product -->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="column small-11 small-centered">
-        <div class="cSlider cSlider--single">
-          <div class="cSlider__item "><img class="slide-sync ref noodle col-6"
-              src="./Img/Photo/Home-hao-hao-tom-chua-cay-acecook.jpg" alt="">
-            <div class="row" style="display: inline-block;">
-              <h1 class="cSlider--single-title">HẢO HẢO TÔM CHUA CAY</h1>
-              <h2 class="cSlider--single-desc">Bấm vào “xem thêm” để cùng tìm hiểu chương trình khuyến mại “Ăn Mì Hảo
-                Hảo Vi Vu Cùng Sao” nhé!</h2>
-              <a href="./Subpage/Music_box_sp.html" class="btn-xem" style="margin-left: 10px;">Chi tiết</a>
-            </div>
-          </div>
 
-          <div class="cSlider__item"><img class="slide-sync ref noodle col-6"
-              src="./Img/Photo/Home-hao-hao-sa-te-hanh-tim-acecook.jpg" alt=""></div>
-
-
-          <div class="cSlider__item"><img class="slide-sync ref noodle col-6"
-              src="./Img/Photo/Home-hao-hao-suon-heo-toi-phi-acecook.jpg" alt="">
-          </div>
-
-          <div class="cSlider__item"><img class="slide-sync ref noodle col-6"
-              src="./Img/Photo/Home-hao-hao-mi-xao-tom-hanh-acecook.jpg" alt="">
-          </div>
-        </div>
-
-        <div class="cSlider cSlider--nav">
-          <div class="cSlider__item col-lg-12"><img class="slide-sync"
-              src="./Img/Photo/Home-hao-hao-tom-chua-cay-acecook.jpg" alt="">
-          </div>
-          <div class="cSlider__item"><img class="slide-sync"
-              src="./Img/Photo/Home-hao-hao-sa-te-hanh-tim-acecook.jpg" alt=""></div>
-          <div class="cSlider__item"><img class="slide-sync"
-              src="./Img/Photo/Home-hao-hao-suon-heo-toi-phi-acecook.jpg" alt="">
-          </div>
-          <div class="cSlider__item"><img class="slide-sync"
-              src="./Img/Photo/Home-hao-hao-mi-xao-tom-hanh-acecook.jpg" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end product -->
 
 
 
