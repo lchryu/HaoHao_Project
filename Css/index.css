@@ -11,9 +11,22 @@
     margin: 8px;
 }
 
+
 .test {
     height: 1000px;
 }
+nav{
+    position: fixed !important;
+    z-index: 1;
+    width: 100%;
+    margin-top: -65px;
+}
+
+.carousel11-item img{
+    margin-top: 65px;
+}
+
+
 
 .navbar li:hover a {
     background-color: #e96593;
